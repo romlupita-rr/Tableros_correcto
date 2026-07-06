@@ -1,0 +1,335 @@
+"cveentidad","entidad","cveunidadmin","descripcion","descorta"
+1,Aguascalientes,3010630,Aguascalientes II,Aguascalientes II
+1,Aguascalientes,3012840,Aguascalientes III,Aguascalientes III
+1,Aguascalientes,3013180,Aguascalientes IV,Aguascalientes IV
+1,Aguascalientes,3012470,Ing. Miguel Ángel Barberena Vega,Ing. Miguel Ángel Barberena Vega
+1,Aguascalientes,3013190,Pabellón de Arteaga,Pabellón de Arteaga
+1,Aguascalientes,3010160,Prof. J. Refugio Esparza Reyes,Refugio Esparza R
+1,Aguascalientes,3012850,Tepezalá,Tepezalá
+2,Baja California,3020640,Ensenada,Ensenada
+2,Baja California,3022150,Ing. César Moreno Martínez de Escobar,César M. Mtz de E.
+2,Baja California,3020170,Mexicali I,Mexicali I
+2,Baja California,3021540,Mexicali II,Mexicali II
+2,Baja California,3020180,Tijuana I,Tijuana I
+2,Baja California,3021430,Tijuana II,Tijuana II
+3,Baja California Sur,3030190,La Paz,La Paz
+3,Baja California Sur,3032820,San José del Cabo,San José del Cabo
+4,Campeche,3040210,Ciudad del Carmen,Ciudad del Carmen
+4,Campeche,3042720,Dzitbalché,Dzitbalché
+4,Campeche,3040200,Lic. Guillermo González Galera,Lic.Guillermo González G
+5,Coahuila de Zaragoza,3051590,Ciudad Acuña,Acuña
+5,Coahuila de Zaragoza,3052920,Frontera,Frontera
+5,Coahuila de Zaragoza,3050660,Monclova,Monclova
+5,Coahuila de Zaragoza,3050240,Muzquiz,Muzquiz
+5,Coahuila de Zaragoza,3050100,Piedras Negras,Piedras Negras
+5,Coahuila de Zaragoza,3050230,Saltillo I,Saltilllo I
+5,Coahuila de Zaragoza,3052170,Saltillo II,Saltillo II
+5,Coahuila de Zaragoza,3052550,San Pedro de las Colonias,Sn Pedro de las Col.
+5,Coahuila de Zaragoza,3052160,Torreón,Torreón
+6,Colima,3061810,Colima,Colima
+6,Colima,3060610,Prof. Gustavo Alberto Vázquez Montes,Gustavo A.Vázquez M.
+6,Colima,3063130,Tecoman,Tecoman
+7,Chiapas,3073310,Altamirano,Altamirano
+7,Chiapas,3070220,Chiapa de Corzo,Chiapa de Corzo
+7,Chiapas,3070700,Comitán,Comitán
+7,Chiapas,3070670,Huixtla,Huixtla
+7,Chiapas,3072620,Ocosingo,Ocosingo
+7,Chiapas,3070690,Palenque,Palenque
+7,Chiapas,3073400,Pichucalco,Pichucalco
+7,Chiapas,3071710,San Cristóbal de las Casas,Sn Cristóbal de las C
+7,Chiapas,3073250,Tapachula,Tapachula
+7,Chiapas,3071700,Tonalá-Chiapas,Tonalá
+7,Chiapas,3070680,Tuxtla Chico,Tuxtla Chico
+7,Chiapas,3073120,Tuxtla Gutiérrez,Tuxtla Gutiérrez
+8,Chihuahua,3080250,Chihuahua I,Chihuahua I
+8,Chihuahua,3082190,Chihuahua II,Chihuahua II
+8,Chihuahua,3082180,Ciudad Cuauhtémoc,Ciudad Cuauhtémoc
+8,Chihuahua,3082080,Ciudad Delicias,Ciudad Delicias
+8,Chihuahua,3080260,Ciudad Juárez I,Ciudad Juárez I
+8,Chihuahua,3082070,Ciudad Juárez II,Ciudad Juarez II
+8,Chihuahua,3083230,Juárez III,Juárez III
+8,Chihuahua,3081560,Parral,Parral
+9,Ciudad de México,3091320,Aeropuerto,Aeropuerto
+9,Ciudad de México,3092200,Alvaro Obregón I,Alvaro Obregón I
+9,Ciudad de México,3092210,Alvaro Obregón II,Alvaro Obregón II
+9,Ciudad de México,3090040,Aragón,Aragón
+9,Ciudad de México,3091060,Azcapotzalco,Azcapotzalco
+9,Ciudad de México,3090110,Aztahuacán,Aztahuacán
+9,Ciudad de México,3099400,CDMEX Pruebas 2017,CDMEX Pruebas 2017
+9,Ciudad de México,3091610,Centro México Canadá del CONALEP,México - Canadá
+9,Ciudad de México,3091660,Comercio y Fomento Industrial,Comercio y Fomento Ind
+9,Ciudad de México,3091890,Coyoacán,Coyoacán
+9,Ciudad de México,3098020,Escuela de Enfermería del Hospital de Jesús,Hospital de Jesús
+9,Ciudad de México,3091950,Gustavo A. Madero I,Gustavo A. Madero I
+9,Ciudad de México,3092240,Gustavo A. Madero II,Gustavo A. Madero II
+9,Ciudad de México,3090020,Ing. José Antonio Padilla Segura III,Ing.J.Antonio Padilla S.III
+9,Ciudad de México,3099030,Instituto Antares A.C.,Instituto Antares
+9,Ciudad de México,3092100,Iztacalco I,Iztacalco I
+9,Ciudad de México,3090030,Iztapalapa I,Iztapalapa I
+9,Ciudad de México,3091960,Iztapalapa II,Iztapalapa II
+9,Ciudad de México,3092260,Iztapalapa III,Iztapalapa III
+9,Ciudad de México,3092250,Iztapalapa IV,Iztapalapa IV
+9,Ciudad de México,3092110,Iztapalapa V,Iztapalapa V
+9,Ciudad de México,3092090,Magdalena Contreras,Magdalena Contreras
+9,Ciudad de México,3092270,Milpa Alta,Milpa Alta
+9,Ciudad de México,3092670,Santa Fe,Santa Fe
+9,Ciudad de México,3092300,Tláhuac,Tláhuac
+9,Ciudad de México,3091860,Tlalpan I,Tlalpan I
+9,Ciudad de México,3092120,Tlalpan II,Tlalpan II
+9,Ciudad de México,3090150,Venustiano Carranza I,Venustiano Carranza I
+9,Ciudad de México,3092450,Venustiano Carranza II,Venustiano Carranza II
+9,Ciudad de México,3090120,Xochimilco,Xochimilco
+10,Durango,3101460,Centro Mexicano Francés del CONALEP,C Mexicano Francés
+10,Durango,3101300,Durango,Durango
+10,Durango,3102990,Tayoltita,Tayoltita
+11,Guanajuato,3111630,Acámbaro,Acámbaro
+11,Guanajuato,3119010,Bachillerato Tecnologico y Centro de Capacitacion Laboral Don Bosco A. C.,Don Bosco
+11,Guanajuato,3110280,Celaya,Celaya
+11,Guanajuato,3112330,Cortazar,Cortazar
+11,Guanajuato,3110300,Felipe Benicio Martínez Chapa,Felipe Benicio Martínez Chapa
+11,Guanajuato,3110290,Irapuato,Irapuato
+11,Guanajuato,3113270,Irapuato II,Irapuato II
+11,Guanajuato,3112030,León II,León II
+11,Guanajuato,3113020,León III,León III
+11,Guanajuato,3111280,Moroleón,Moroleón
+11,Guanajuato,3111740,Pénjamo,Pénjamo
+11,Guanajuato,3113210,Salamanca,Salamanca
+11,Guanajuato,3112490,Salvatierra,Salvatierra
+11,Guanajuato,3113030,San Felipe,San Felipe
+11,Guanajuato,3112700,San José Iturbide,San José
+11,Guanajuato,3112040,Silao,Silao
+11,Guanajuato,3110720,Valle de Santiago,Valle de Santiago
+12,Guerrero,3121110,Acapulco I,Acapulco I
+12,Guerrero,3122060,Acapulco II,Acapulco II
+12,Guerrero,3123340,Buenavista de Cuéllar,Buenavista de Cuéllar
+12,Guerrero,3121330,Chilapa,Chilapa
+12,Guerrero,3121130,Chilpancingo,Chilpancingo
+12,Guerrero,3121120,Iguala,Iguala
+12,Guerrero,3121390,Ometepec,Ometepec
+12,Guerrero,3121340,Tixtla,Tixtla
+12,Guerrero,3123350,Tlapa de Comonfort,Tlapa de Comonfort
+12,Guerrero,3120270,Zihuatanejo,Zihuatanejo
+13,Hidalgo,3130310,Pachuca,Pachuca
+13,Hidalgo,3132880,Pachuca II,Pachuca II
+13,Hidalgo,3132140,Tepeji del Río,Tepeji del Río
+13,Hidalgo,3131780,Tizayuca,Tizayuca
+13,Hidalgo,3132500,Tulancingo,Tulancingo
+13,Hidalgo,3132870,Villa de Tezontepec,Villa de Tezontepec
+14,Jalisco,3149020,Academia Municipal de Enfermeria,Academia Municipal de Enfermeria
+14,Jalisco,3141820,Acatlán de Juárez,Acatlán de Juárez
+14,Jalisco,3142810,Ajijic-Chapala,Ajijic-Chapala
+14,Jalisco,3140740,Arandas,Arandas
+14,Jalisco,3140760,Guadalajara I,Guadalajara I
+14,Jalisco,3140710,Guadalajara II,Guadalajara II
+14,Jalisco,3142340,Guadalajara III,Guadalajara III
+14,Jalisco,3141100,Jalostotitlán,Jalostotitlán
+14,Jalisco,3140780,José Ma. Martínez R.,José Ma. Martínez R.
+14,Jalisco,3149070,Josefina Dueñas Montoya A.C.,Josefina Dueñas Montoya A.C.
+14,Jalisco,3141310,Juanacatlán,Juanacatlán
+14,Jalisco,3142600,La Barca,La Barca
+14,Jalisco,3141680,Lagos de Moreno,Lagos de Moreno
+14,Jalisco,3140320,"Lic. Francisco Medina Ascencio, Mexicano-Italiano",Mexicano-Italiano
+14,Jalisco,3142350,Profra. Idolina Gaona de Cosio - Tonalá,Tonalá
+14,Jalisco,3140750,Puerto Vallarta,Puerto Vallarta
+14,Jalisco,3142930,Puerto Vallarta II,Puerto Vallarta II
+14,Jalisco,3143220,Tapalpa,Tapalpa
+14,Jalisco,3140770,Tlaquepaque,Tlaquepaque
+14,Jalisco,3142580,Zapopan,Zapopan
+15,México,3150810,Almoloya del Río,Almoloya del Río
+15,México,3151830,Atizapán I,Atizapán I
+15,México,3152480,Atizapán II,Atizapán II
+15,México,3150330,Atlacomulco,Atlacomulco
+15,México,3152630,Chalco,Chalco
+15,México,3151070,Chimalhuacán,Chimalhuacán
+15,México,3150010,Ciudad Azteca,Ciudad Azteca
+15,México,3151840,Coacalco,Coacalco
+15,México,3151080,Cuautitlán I,Cuautitlán
+15,México,3150140,Del Sol,Del Sol
+15,México,3151920,Ecatepec I,Ecatepec I
+15,México,3152220,Ecatepec II,Ecatepec II
+15,México,3152230,Ecatepec III,Ecatepec III
+15,México,3150080,El Oro,El Oro
+15,México,3151250,El Zarco,El Zarco
+15,México,3150060,Gustavo Baz - Tlalnepantla,Gustavo Baz
+15,México,3151980,Huixquilucan,Huixquilucan
+15,México,3151090,Ing. Bernardo Quintana Arrioja - Cuautitlán,Bernardo Quintana A
+15,México,3152360,Ixtapaluca,Ixtapaluca
+15,México,3151990,Lerma,Lerma
+15,México,3151970,Los Reyes la Paz,Los Reyes la Paz
+15,México,3151870,Naucalpan I,Naucalpan I
+15,México,3151880,Naucalpan II,Naucalpan II
+15,México,3151900,Nezahualcóyotl I,Nezahualcóyotl I
+15,México,3151910,Nezahualcóyotl II,Nezahualcóyotl II
+15,México,3152290,Nezahualcóyotl III,Nezahualcóyotl III
+15,México,3152370,Nicolás Romero,Nicolás Romero
+15,México,3150790,Santiago Tianguistenco,Santiago Tianguistenco
+15,México,3151260,Santiago Tilapa,Santiago Tilapa
+15,México,3152380,Tecámac,Tecámac
+15,México,3150800,Temoaya,Temoaya
+15,México,3151850,Texcoco,Texcoco
+15,México,3151930,Tlalnepantla I,Tlalnepantla I
+15,México,3152280,Tlalnepantla II,Tlalnepantla II
+15,México,3152310,Tlalnepantla III,Tlalnepantla III
+15,México,3150340,Toluca,Toluca
+15,México,3151940,Tultitlán,Tultitlán
+15,México,3150130,Valle de Aragón,Valle de Aragón
+15,México,3150820,Villa Victoria,Villa Victoria
+16,Michoacán de Ocampo,3160850,Apatzingán,Apatzingán
+16,Michoacán de Ocampo,3162560,Ciudad Hidalgo,Ciudad Hidalgo
+16,Michoacán de Ocampo,3160870,La Piedad,La Piedad
+16,Michoacán de Ocampo,3160350,Lázaro Cárdenas,Lázaro Cárdenas
+16,Michoacán de Ocampo,3161800,Los Reyes,Los Reyes
+16,Michoacán de Ocampo,3160830,Morelia I,Morelia I
+16,Michoacán de Ocampo,3162390,Morelia II,Morelia II
+16,Michoacán de Ocampo,3160840,Pátzcuaro,Pátzcuaro
+16,Michoacán de Ocampo,3161670,Sahuayo,Sahuayo
+16,Michoacán de Ocampo,3160890,Uruapan,Uruapan
+16,Michoacán de Ocampo,3160860,Zacapu,Zacapu
+16,Michoacán de Ocampo,3160880,Zamora,Zamora
+16,Michoacán de Ocampo,3162400,Zitácuaro,Zitácuaro
+17,Morelos,3171730,Cuautla,Cuautla
+17,Morelos,3172410,Cuernavaca,Cuernavaca
+17,Morelos,3172940,Jiutepec - Calera Chica,Jiutepec
+17,Morelos,3170360,Temixco,Temixco
+17,Morelos,3172830,Tepoztlán,Tepoztlán
+18,Nayarit,3183110,Bahia de Banderas,Bahia de Banderas
+18,Nayarit,3182570,Peñita de Jaltemba,Peñita de Jaltemba
+18,Nayarit,3181690,Tepic,Tepic
+18,Nayarit,3183100,Tepic II,Tepic II
+19,Nuevo León,3193320,Cadereyta Jiménez,Cadereyta Jiménez
+19,Nuevo León,3192960,Don Benjamín Salinas Westrup,Don Benjamín Salinas W
+19,Nuevo León,3192900,Don Carlos Maldonado Elizondo,Don Carlos Maldonado E.
+19,Nuevo León,3192420,Don Humberto Lobo Villarreal,Don Humberto Lobo Villarreal
+19,Nuevo León,3192130,Don José María Hernández Martínez,Dn J María Hdez Martínez
+19,Nuevo León,3190900,Don Protasio Rodríguez Cuéllar,Don Protasio Rdz Cuéllar
+19,Nuevo León,3192950,Don Víctor Gómez Garza,Don Víctor Gómez Garza
+19,Nuevo León,3191350,Dr. Arroyo,Dr. Arroyo
+19,Nuevo León,3192890,Dr. Carlos Canseco González,Dr. Carlos Canseco Glz.
+19,Nuevo León,3191230,Dr. Eduardo Macías Santos,Dr. Eduardo Macías Santos
+19,Nuevo León,3192540,Ing. Adrián Sada Treviño,Ing. Adrián Sada Treviño
+19,Nuevo León,3190910,Ing. Gustavo M. de la Garza Ortega,Ing. Gustavo M. de la Garza O.
+19,Nuevo León,3190370,Ing. José Antonio Padilla Segura I,José A Padilla Segura I
+19,Nuevo León,3193000,Joel Rocha Barocio,Joel Rocha Barocio
+19,Nuevo León,3193140,José María Parás y Ballesteros,José María Parás y Ballesteros
+19,Nuevo León,3193330,Lic. Bárbara Herrera de Garza,Lic. Bárbara Herrera de Garza
+19,Nuevo León,3190380,Lic. Raúl Rangel Frias,Lic. Raúl Rangel Frias
+20,Oaxaca,3201570,Dr. Victor Bravo Ahuja-Tuxtepec,Tuxtepec
+20,Oaxaca,3201450,Gral. Antonio de León,Huajuapan de León
+20,Oaxaca,3202430,Juchitán,Juchitán
+20,Oaxaca,3200390,Oaxaca,Oaxaca
+20,Oaxaca,3201580,Puerto Escondido,Puerto Escondido
+20,Oaxaca,3201550,Salina Cruz,Salina Cruz
+21,Puebla,3210930,Atencingo,Atencingo
+21,Puebla,3211510,Calipam,Calipam
+21,Puebla,3212650,Chipilo,Chipilo
+21,Puebla,3211520,Huauchinango,Huauchinango
+21,Puebla,3210400,Puebla I,Puebla I
+21,Puebla,3211750,Puebla II,Puebla II
+21,Puebla,3212610,Puebla III,Puebla III
+21,Puebla,3211490,San Martín Texmelucan,San Martín Texm
+21,Puebla,3211500,Tehuacán,Tehuacán
+21,Puebla,3211530,Teziutlán,Teziutlán
+22,Querétaro de Arteaga,3223280,Aeronáutico,Aeronáutico
+22,Querétaro de Arteaga,3222800,Amealco,Amealco
+22,Querétaro de Arteaga,3223360,"Automotriz, José Vasconcelos","Automotriz, José Vasconcelos"
+22,Querétaro de Arteaga,3220410,"Querétaro ""Roberto Ruiz Obregón""","Querétaro ""Roberto Ruiz Obregón"""
+22,Querétaro de Arteaga,3220420,San Juan del Rio,San Juan del Rio
+23,Quintana Roo,3230090,Cancún,Cancún
+23,Quintana Roo,3232860,Cancún II,Cancún II
+23,Quintana Roo,3232980,Cancún III,Cancún III
+23,Quintana Roo,3233390,Cancún IV,Cancún IV
+23,Quintana Roo,3230650,Cozumel,Cozumel
+23,Quintana Roo,3231020,Felipe Carrillo Puerto,Felipe Carrillo Puerto
+23,Quintana Roo,3230070,Lic. Jesús Martínez Ross - Chetumal,Jesús Martínez Ross
+23,Quintana Roo,3232970,Playa del Carmen,Playa del Carmen
+24,San Luis Potosí,3240440,Ciudad Valles,Ciudad Valles
+24,San Luis Potosí,3242050,Ing. José Antonio Padilla Segura-SLP,Ing. José A. Padilla S.-SLP
+24,San Luis Potosí,3240430,Ing. Manuel Moreno Torres S.L.P.,Manuel Moreno Torres
+24,San Luis Potosí,3240940,Matehuala,Matehuala
+24,San Luis Potosí,3241760,Villa de Reyes,Villa de Reyes
+25,Sinaloa,3253160,Culiacan III,Culiacan III
+25,Sinaloa,3253290,Culiacan IV,Culiacan IV
+25,Sinaloa,3251160,El Carrizo,El Carrizo
+25,Sinaloa,3251210,El Rosario,El Rosario
+25,Sinaloa,3253170,Escuinapa,Escuinapa
+25,Sinaloa,3251180,Guasave,Guasave
+25,Sinaloa,3251140,Ing. José Antonio Padilla Segura-Culiacán II,Ing. José Antonio Padilla Segura-Culiacán II
+25,Sinaloa,3250950,Juan de Dios Bátiz,Culiacán I
+25,Sinaloa,3251170,Juan José Ríos,Juan Jose Rios
+25,Sinaloa,3251200,La Reforma,La Reforma
+25,Sinaloa,3250450,Los Mochis,Los Mochis
+25,Sinaloa,3253150,Los Mochis II,Los Mochis II
+25,Sinaloa,3250460,Mazatlán I,Mazatlán I
+25,Sinaloa,3250620,Mazatlán II,Mazatlán II
+25,Sinaloa,3251190,Mocorito,Mocorito
+25,Sinaloa,3251150,Navolato,Navolato
+26,Sonora,3262530,Agua Prieta,Agua Prieta
+26,Sonora,3261410,Alvaro Obregón Salido - Huatabampo,Alvaro Obregón S.
+26,Sonora,3261480,Caborca,Caborca
+26,Sonora,3260960,Ciudad Obregón,Obregón
+26,Sonora,3260970,Empalme,Empalme
+26,Sonora,3260500,Gral. Plutarco Elías Calles - Guaymas,Plutarco Elías Calles
+26,Sonora,3260470,Hermosillo I,Hermosillo I
+26,Sonora,3260480,Hermosillo II,Hermosillo II
+26,Sonora,3261790,Hermosillo III,Hermosillo III
+26,Sonora,3262640,Magdalena de Kino,Magdalena de Kino
+26,Sonora,3260490,Nacozari,Nacozari
+26,Sonora,3261400,Navojoa,Navojoa
+26,Sonora,3261420,Nogales,Nogales
+26,Sonora,3262020,San Luis Río Colorado,Sn Luis Río Colorado
+27,Tabasco,3270520,Cárdenas,Cárdenas
+27,Tabasco,3272910,Comalcalco,Comalcalco
+27,Tabasco,3270990,Lic. Manrique Dagdug Urgell,Huimanguillo
+27,Tabasco,3270530,Macuspana,Macuspana
+27,Tabasco,3271000,Paraíso,Paraíso
+27,Tabasco,3270510,Villahermosa I,Villahermosa I
+27,Tabasco,3270980,Villahermosa II,Villahermosa II
+28,Tamaulipas,3281270,Ciudad Mante,Ciudad Mante
+28,Tamaulipas,3281720,Ciudad Victoria,Ciudad Victoria
+28,Tamaulipas,3280550,Matamoros,Matamoros
+28,Tamaulipas,3282590,Miguel Alemán,Miguel Alemán
+28,Tamaulipas,3282460,Nuevo Laredo,Nuevo Laredo
+28,Tamaulipas,3281290,Reynosa,Reynosa
+28,Tamaulipas,3282000,Río Bravo,Río Bravo
+28,Tamaulipas,3280540,Tampico,Tampico
+29,Tlaxcala,3290560,Amaxac de Guerrero,Amaxac de Gro.
+29,Tlaxcala,3292510,Teacalco,Teacalco
+29,Tlaxcala,3291010,Zacualpan,Zacualpan
+30,Veracruz Llave,3301030,Cándido Aguilar Vargas,Cándido Aguilar Vargas
+30,Veracruz Llave,3300580,Don Juan Osorio López,Don Juan Osorio L
+30,Veracruz Llave,3301220,Dr. Gonzalo Aguirre Beltrán,Gonzalo Aguirre Beltrán
+30,Veracruz Llave,3302010,Dr. Guillermo Figueroa Cárdenas,Guillermo Figueroa C
+30,Veracruz Llave,3303370,Heberto Castillo Martínez,Heberto Castillo Martínez
+30,Veracruz Llave,3303380,Heriberto Jara Corona,Heriberto Jara Corona
+30,Veracruz Llave,3303200,Hermila Galindo Acosta,Hermila Galindo Acosta
+30,Veracruz Llave,3301040,Juan Díaz Covarrubias,Juan Díaz Covarrubias
+30,Veracruz Llave,3301650,Lic. Jesús Reyes Heroles,Jesús Reyes Heroles
+30,Veracruz Llave,3302440,Manuel Maples Arce,Manuel Maples Arce
+30,Veracruz Llave,3301620,Manuel Rivera Cambas,Manuel Rivera Cambas
+30,Veracruz Llave,3301770,Poza Rica,Poza Rica
+30,Veracruz Llave,3302520,Ricardo Flores Magón,Ricardo Flores Magón
+30,Veracruz Llave,3300570,Veracruz I,Veracruz I
+30,Veracruz Llave,3301440,Veracruz II,Veracruz II
+31,Yucatán,3310590,Mérida I,Mérida I
+31,Yucatán,3310600,Mérida II,Mérida II
+31,Yucatán,3313240,Mérida III,Mérida III
+31,Yucatán,3311640,Tizimin,Tizimin
+31,Yucatán,3311050,Valladolid,Valladolid
+32,Zacatecas,3321370,Fresnillo,Fresnillo
+32,Zacatecas,3321360,Maestra Dolores Castro Varela,Zacatecas
+32,Zacatecas,3323260,Mazapil,Mazapil
+39,Servicio Exterior Mexicano,3399900,Plantel de Pruebas,Plantel de Pruebas
+40,Conalep Servicios Institucionales,3408100,Colegio Conde de Romero,Colegio Conde
+40,Conalep Servicios Institucionales,3408130,Colegio Zaragoza de Enfermería de Monclova,Colegio Zaragoza de Enfermería
+40,Conalep Servicios Institucionales,3408080,"Escuela de Enfermería ""Albarrán""  A.C.","Enfermería ""Albarrán""  A.C."
+40,Conalep Servicios Institucionales,3408190,Escuela de Enfermería Curie,Escuela de Enfermería Curie
+40,Conalep Servicios Institucionales,3408180,Escuela de Enfermería de San Pedro,Escuela de Enfermería de San Pedro
+40,Conalep Servicios Institucionales,3408110,Escuela de Enfermería y Formación Profesional para la Salud Dorothea E. Orem,Dorothea E. Orem
+40,Conalep Servicios Institucionales,3408160,Escuela de Estudios Técnicos de Enfermería,Estudios Técnicos de Enfermería
+40,Conalep Servicios Institucionales,3408120,Instituto Campo de Oro,Campo de Oro
+40,Conalep Servicios Institucionales,3408140,Instituto de Educación Media y Superior Ma. Esther Zuno de Echeverría A.C.,Ma. Esther Zuno Echeverría
+40,Conalep Servicios Institucionales,3408170,Instituto de Enfermería y Radiología de Saltillo,Enfermería y Radiología de Saltillo
+40,Conalep Servicios Institucionales,3409060,Instituto Mexicano del Seguro Social,IMSS
+40,Conalep Servicios Institucionales,3408150,Instituto Universitario Metropolitano,Instituto Universitario Metropolitano
+40,Conalep Servicios Institucionales,3408060,ISSSTE,ISSSTE
+40,Conalep Servicios Institucionales,3408090,Up Carba,Up Carba

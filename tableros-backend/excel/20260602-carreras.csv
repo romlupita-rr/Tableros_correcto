@@ -1,0 +1,300 @@
+"cvemodeloeducativo,""cveplanestudio"",""descripcion"",""descorta"""
+2008,Basico,Componente Basico Inicial,PT-B 
+2008,NO ASIGNADO,NO ASIGNADO,PT-B 
+2008,ASDI08T,Profesional Técnico Asistente Directivo,PT Asistente Directivo
+2008,DENT08T,Profesional Técnico Asistente y Protesista Dental,PT Asistente y Protesista Dental
+2008,AUTO08T,Profesional Técnico Automotriz,PT Automotriz
+2008,ADMO08T,Profesional Técnico en Administración,PT en Administración
+2008,ALBE08T,Profesional Técnico en Alimentos y Bebidas,PT en Alimentos y Bebidas
+2008,ARTE08T,Profesional Técnico en Artes Gráficas,PT en Artes Gráficas
+2008,TRAN14T,Profesional Técnico en Autotransporte,PT en Autotransporte
+2008,ATRO08T,Profesional Técnico en Autotrónica,PT en Autotrónica
+2008,CCAM08T,Profesional Técnico en Conservación del Medio Ambiente,PT en Conservación del Medio Ambiente
+2008,CONS08T,Profesional Técnico en Construcción,PT en Construcción
+2008,CONA13T,Profesional Técnico en Contabilidad,PT en Contabilidad
+2008,CONT08T,Profesional Técnico en Contaduría,PT en Contaduría
+2008,COCA08T,Profesional Técnico en Control de Calidad,PT en Control de Calidad
+2008,CURT08T,Profesional Técnico en Curtiduría,PT en Curtiduría
+2008,ELIN08T,Profesional Técnico en Electricidad Industrial,PT en Electricidad Industrial
+2008,EMEC08T,Profesional Técnico en Electromecánica Industrial,PT en Electromecánica Industrial
+2008,ENFE08T,Profesional Técnico en Enfermería General,PT en Enfermería General
+2008,ESCE12T,Profesional Técnico en Escenotecnia,PT Profesional Técnico en Escenotecnia
+2008,EGAD08T,Profesional Técnico en Expresión Gráfica Digital,PT en Expresión Gráfica Digital
+2008,FAEN08T,Profesional Técnico en Fuentes Alternas de Energía,PT en Fuentes Alternas de Energía
+2008,HOSP08T,Profesional Técnico en Hospitalidad Turística,PT en Hospitalidad Turística
+2008,INAU16T,Profesional Técnico en Industria Automotriz,PT en Industria Automotriz
+2008,INVE08T,Profesional Técnico en Industria del Vestido,PT en Industria del Vestido
+2008,INFO08T,Profesional Técnico en Informática,PT en Informática
+2008,LARE08T,Profesional Técnico en Laministería y Recubrimiento de las Aeronaves,PT en Laministería y Recubrimiento de las Aeronaves
+2008,MAUT13T,Profesional Técnico en Mantenimiento Automotriz,PT en Mantenimiento Automotriz
+2008,MECC08T,Profesional Técnico en Mantenimiento de Equipo de Cómputo,PT en Mantenimiento de Equipo de Cómputo
+2008,MMOP08T,Profesional Técnico en Mantenimiento de Motores y Planeadores,PT en Mantenimiento de Motores y Planeadores
+2008,MSIA08T,Profesional Técnico en Mantenimiento de Sistemas Automáticos,PT en Mantenimiento de Sistemas Automáticos
+2008,EKIN08T,Profesional Técnico en Mantenimiento de Sistemas Electrónicos,PT en Mantenimiento de Sistemas Electrónicos
+2008,MAHE08T,Profesional Técnico en Máquinas Herramienta,PT en Máquinas Herramienta
+2008,MECA08T,Profesional Técnico en Mecatrónica,PT en Mecatrónica
+2008,METM08T,Profesional Técnico en Metalmecánica,PT en Metalmecánica
+2008,MTGA08T,Profesional Técnico en Metalurgia,PT en Metalurgia
+2008,MODI08T,Profesional Técnico en Motores a Diésel,PT en Motores a Diésel
+2008,OPTO08T,Profesional Técnico en Optometría,PT en Optometría
+2008,PLAS08T,Profesional Técnico en Plásticos,PT en Plásticos
+2008,PRIA08T,Profesional Técnico en Procesamiento Industrial de Alimentos,PT en Procesamiento Industrial de Alimentos
+2008,PROC08T,Profesional Técnico en Producción de Calzado,PT en Producción de Calzado
+2008,PTPA08T,Profesional Técnico en Producción y Transformación de Productos Acuícolas,PT en Producción y Transformación de Productos Acuícolas
+2008,PROI08T,Profesional Técnico en Productividad Industrial,PT en Productividad Industrial
+2008,QUIN08T,Profesional Técnico en Química Industrial,PT en Química Industrial
+2008,REDE08T,Profesional Técnico en Redes de Distribución Eléctrica,PT en Redes de Distribución Eléctrica
+2008,REAA08T,Profesional Técnico en Refrigeración y Aire Acondicionado,PT en Refrigeración y Aire Acondicionado
+2008,RECL13T,Profesional Técnico en Refrigeración y Climatización,PT en Refrigeración y Climatización
+2008,SALU08T,Profesional Técnico en Salud Comunitaria,PT en Salud Comunitaria
+2008,SHPC08T,Profesional Técnico en Seguridad e Higiene y Protección Civil,PT en Seguridad e Higiene y Protección Civil
+2008,SEKA08T,Profesional Técnico en Sistemas Electrónicos de Aviación,PT en Sistemas Electrónicos de Aviación
+2008,SOMA13T,Profesional Técnico en Soporte y Mantenimiento de Equipo de Cómputo,PT en Soporte y Mantenimiento de Equipo de Cómputo
+2008,TELE08T,Profesional Técnico en Telecomunicaciones,PT en Telecomunicaciones
+2008,TERA08T,Profesional Técnico en Terapia Respiratoria,PT en Terapia Respiratoria
+2008,TEXT08T,Profesional Técnico en Textil,PT en Textil
+2008,MIME08T,Profesional Técnico Minero Metalurgista,PT Minero Metalurgista
+2008,TRAN08T,Profesional Técnico Operador de Autotransporte,PT Operador de Autotransporte
+2008,ASDI08,Profesional Técnico-Bachiller Asistente Directivo,PT-B  Asistente Directivo
+2008,DENT08,Profesional Técnico-Bachiller Asistente y Protesista Dental,PT-B  Asistente y Protesista Dental
+2008,AUTO08,Profesional Técnico-Bachiller Automotriz,PT-B  Automotriz
+2008,ADMO08,Profesional Técnico-Bachiller en Administración,PT-B  en Administración
+2008,ALBE08,Profesional Técnico-Bachiller en Alimentos y Bebidas,PT-B  en Alimentos y Bebidas
+2008,ARTE08,Profesional Técnico-Bachiller en Artes Gráficas,PT-B  en Artes Gráficas
+2008,TRAN14B,Profesional Técnico-Bachiller en Autotransporte,PT-B en Autotransporte
+2008,ATRO08,Profesional Técnico-Bachiller en Autotrónica,PT-B  en Autotrónica
+2008,CCAM08,Profesional Técnico-Bachiller en Conservación del Medio Ambiente,PT-B  en Conservación del Medio Ambiente
+2008,CONS08,Profesional Técnico-Bachiller en Construcción,PT-B  en Construcción
+2008,CONA13B,Profesional Técnico-Bachiller en Contabilidad,PT-B en Contabilidad
+2008,CONT08,Profesional Técnico-Bachiller en Contaduría,PT-B  en Contaduría
+2008,COCA08,Profesional Técnico-Bachiller en Control de Calidad,PT-B  en Control de Calidad
+2008,CURT08,Profesional Técnico-Bachiller en Curtiduría,PT-B  en Curtiduría
+2008,ELIN08,Profesional Técnico-Bachiller en Electricidad Industrial,PT-B  en Electricidad Industrial
+2008,EMEC08,Profesional Técnico-Bachiller en Electromecánica Industrial,PT-B  en Electromecánica Industrial
+2008,ENFE08,Profesional Técnico-Bachiller en Enfermería General,PT-B  en Enfermería General
+2008,ESCE12B,Profesional Técnico-Bachiller en Escenotecnia,PT-B en Escenotecnia
+2008,EGAD08,Profesional Técnico-Bachiller en Expresión Gráfica Digital,PT-B  en Expresión Gráfica Digital
+2008,FONO08B,Profesional Técnico-Bachiller en Fonoaudiología,PT-B en Fonoaudiología
+2008,FAEN08,Profesional Técnico-Bachiller en Fuentes Alternas de Energía,PT-B  en Fuentes Alternas de Energía
+2008,HOSP08,Profesional Técnico-Bachiller en Hospitalidad Turística,PT-B  en Hospitalidad Turística
+2008,INAU16,Profesional Técnico-Bachiller en Industria Automotriz,PT-B en Industria Automotriz
+2008,INVE08,Profesional Técnico-Bachiller en Industria del Vestido,PT-B  en Industria del Vestido
+2008,INFO08,Profesional Técnico-Bachiller en Informática,PT-B  en Informática
+2008,LACL08B,Profesional Técnico-Bachiller en Laboratorio Clínico,PT-B en Laboratorio Clínico
+2008,LARE08,Profesional Técnico-Bachiller en Laministería y Recubrimiento de las Aeronaves,PT-B  en Laministería y Recubrimiento de las Aeronaves
+2008,MAUT13B,Profesional Técnico-Bachiller en Mantenimiento Automotriz,PT-B en Mantenimiento Automotriz
+2008,MECC08,Profesional Técnico-Bachiller en Mantenimiento de Equipo de Cómputo,PT-B  en Mantenimiento de Equipo de Cómputo
+2008,MMOP08,Profesional Técnico-Bachiller en Mantenimiento de Motores y Planeadores,PT-B  en Mantenimiento de Motores y Planeadores
+2008,MSIA08,Profesional Técnico-Bachiller en Mantenimiento de Sistemas Automáticos,PT-B  en Mantenimiento de Sistemas Automáticos
+2008,EKIN08,Profesional Técnico-Bachiller en Mantenimiento de Sistemas Electrónicos,PT-B  en Mantenimiento de Sistemas Electrónicos
+2008,MAHE08,Profesional Técnico-Bachiller en Máquinas Herramienta,PT-B  en Máquinas Herramienta
+2008,MECA08,Profesional Técnico-Bachiller en Mecatrónica,PT-B  en Mecatrónica
+2008,METM08,Profesional Técnico-Bachiller en Metalmecánica,PT-B  en Metalmecánica
+2008,MTGA08,Profesional Técnico-Bachiller en Metalurgia,PT-B  en Metalurgia
+2008,MODI08,Profesional Técnico-Bachiller en Motores a Diésel,PT-B en Motores a Diésel
+2008,OPTO08,Profesional Técnico-Bachiller en Optometría,PT-B  en Optometría
+2008,PLAS08,Profesional Técnico-Bachiller en Plásticos,PT-B  en Plásticos
+2008,PRIA08,Profesional Técnico-Bachiller en Procesamiento Industrial de Alimentos,PT-B  en Procesamiento Industrial de Alimentos
+2008,PROC08,Profesional Técnico-Bachiller en Producción de Calzado,PT-B  en Producción de Calzado
+2008,PTPA08,Profesional Técnico-Bachiller en Producción y Transformación de Productos Acuícolas,PT-B  en Producción y Transformación de Productos Acuícolas
+2008,PROI08,Profesional Técnico-Bachiller en Productividad Industrial,PT-B  en Productividad Industrial
+2008,QUIN08,Profesional Técnico-Bachiller en Química Industrial,PT-B  en Química Industrial
+2008,RRXX08B,Profesional Técnico-Bachiller en Radiología e Imagen,PT-B en Radiología e Imagen
+2008,RDTT08B,Profesional Técnico-Bachiller en Radioterapia,PT-B en Radioterapia
+2008,REDE08,Profesional Técnico-Bachiller en Redes de Distribución Eléctrica,PT-B  en Redes de Distribución Eléctrica
+2008,REAA08,Profesional Técnico-Bachiller en Refrigeración y Aire Acondicionado,PT-B  en Refrigeración y Aire Acondicionado
+2008,RECL13B,Profesional Técnico-Bachiller en Refrigeración y Climatización,PT-B en Refrigeración y Climatización
+2008,SALU08,Profesional Técnico-Bachiller en Salud Comunitaria,PT-B  en Salud Comunitaria
+2008,SHPC08,Profesional Técnico-Bachiller en Seguridad e Higiene y Protección Civil,PT-B  en Seguridad e Higiene y Protección Civil
+2008,SEKA08,Profesional Técnico-Bachiller en Sistemas Electrónicos de Aviación,PT-B  en Sistemas Electrónicos de Aviación
+2008,SOMA13B,Profesional Técnico-Bachiller en Soporte y Mantenimiento de Equipo de Cómputo,PT-B en Soporte y Mantenimiento de Equipo de Cómputo
+2008,TELE08,Profesional Técnico-Bachiller en Telecomunicaciones,PT-B  en Telecomunicaciones
+2008,TEFI08B,Profesional Técnico-Bachiller en Terapia Física,PT-B en Terapia Física
+2008,TEOC08B,Profesional Técnico-Bachiller en Terapia Ocupacional,PT-B en Terapia Ocupacional
+2008,TERA08,Profesional Técnico-Bachiller en Terapia Respiratoria,PT-B  en Terapia Respiratoria
+2008,TEXT08,Profesional Técnico-Bachiller en Textil,PT-B  en Textil
+2008,MIME08,Profesional Técnico-Bachiller Minero Metalurgista,PT-B  Minero Metalurgista
+2008,TRAN08,Profesional Técnico-Bachiller Operador de Autotransporte,PT-B Operador de Autotransporte
+2008,PROCEIES,Programa de Complementación de Estudios para Ingreso a la Educación Superior,PROCEIES
+2018,ABIB18,Profesional Técnico-Bachiller Asistente bibliotecario,PT-B Asistente bibliotecario
+2018,ASDI18,Profesional Técnico-Bachiller Asistente Directivo,PT-B  Asistente Directivo
+2018,DENT18,Profesional Técnico-Bachiller Asistente y Protesista Dental,PT-B  Asistente y Protesista Dental
+2018,ADMO18,Profesional Técnico-Bachiller en Administración,PT-B  en Administración
+2018,AGRO21,Profesional Técnico-Bachiller en Agrotecnología,PT-B en Agrotecnología
+2018,ALBE18,Profesional Técnico-Bachiller en Alimentos y Bebidas,PT-B  en Alimentos y Bebidas
+2018,ALBE22,Profesional Técnico-Bachiller en Alimentos y Bebidas,PT-B  en Alimentos y Bebidas
+2018,ARTE18,Profesional Técnico-Bachiller en Artes Gráficas,PT-B  en Artes Gráficas
+2018,TRAN18,Profesional Técnico-Bachiller en Autotransporte,PT-B en Autotransporte
+2018,ATRO18,Profesional Técnico-Bachiller en Autotrónica,PT-B  en Autotrónica
+2018,CDIA20,Profesional Técnico-Bachiller en Ciencia de Datos e Inteligencia Artificial,PT-B en Ciencia de Datos e Inteligencia Artificial
+2018,CCAM18,Profesional Técnico-Bachiller en Conservación del Medio Ambiente,PT-B  en Conservación del Medio Ambiente
+2018,CONS18,Profesional Técnico-Bachiller en Construcción,PT-B  en Construcción
+2018,CONA18,Profesional Técnico-Bachiller en Contabilidad,PT-B en Contabilidad
+2018,COCA18,Profesional Técnico-Bachiller en Control de Calidad,PT-B  en Control de Calidad
+2018,CURT18,Profesional Técnico-Bachiller en Curtiduría,PT-B  en Curtiduría
+2018,ELIN18,Profesional Técnico-Bachiller en Electricidad Industrial,PT-B  en Electricidad Industrial
+2018,EMEC18,Profesional Técnico-Bachiller en Electromecánica Industrial,PT-B  en Electromecánica Industrial
+2018,ENCO18,Profesional Técnico-Bachiller en Enfermería Comunitaria,PT-B  en Enfermería Comunitaria
+2018,ENFE18,Profesional Técnico-Bachiller en Enfermería General,PT-B  en Enfermería General
+2018,ESCE18,Profesional Técnico-Bachiller en Escenotecnia,PT-B en Escenotecnia
+2018,EXPE20,Profesional Técnico-Bachiller en Exploración y Producción Petrolera,PT-B en Exploración y Producción Petrolera
+2018,EGAD18,Profesional Técnico-Bachiller en Expresión Gráfica Digital,PT-B  en Expresión Gráfica Digital
+2018,FAEN18,Profesional Técnico-Bachiller en Fuentes Alternas de Energía,PT-B  en Fuentes Alternas de Energía
+2018,HOSP18,Profesional Técnico-Bachiller en Hospitalidad Turística,PT-B  en Hospitalidad Turística
+2018,INAU18,Profesional Técnico-Bachiller en Industria Automotriz,PT-B en Industria Automotriz
+2018,INAU20,Profesional Técnico-Bachiller en Industria Automotriz,PT-B en Industria Automotriz
+2018,INVE18,Profesional Técnico-Bachiller en Industria del Vestido,PT-B  en Industria del Vestido
+2018,INFO18,Profesional Técnico-Bachiller en Informática,PT-B  en Informática
+2018,LARE18,Profesional Técnico-Bachiller en Laministería y Recubrimiento de las Aeronaves,PT-B  en Laministería y Recubrimiento de las Aeronaves
+2018,MAUT18,Profesional Técnico-Bachiller en Mantenimiento Automotriz,PT-B en Mantenimiento Automotriz
+2018,MMOP18,Profesional Técnico-Bachiller en Mantenimiento de Motores y Planeadores,PT-B  en Mantenimiento de Motores y Planeadores
+2018,MSIA18,Profesional Técnico-Bachiller en Mantenimiento de Sistemas Automáticos,PT-B  en Mantenimiento de Sistemas Automáticos
+2018,EKIN18,Profesional Técnico-Bachiller en Mantenimiento de Sistemas Electrónicos,PT-B  en Mantenimiento de Sistemas Electrónicos
+2018,MAHE18,Profesional Técnico-Bachiller en Máquinas Herramienta,PT-B  en Máquinas Herramienta
+2018,MECA18,Profesional Técnico-Bachiller en Mecatrónica,PT-B  en Mecatrónica
+2018,METM18,Profesional Técnico-Bachiller en Metalmecánica,PT-B  en Metalmecánica
+2018,MTGA18,Profesional Técnico-Bachiller en Metalurgia,PT-B  en Metalurgia
+2018,MODI18,Profesional Técnico-Bachiller en Motores a Diésel,PT-B en Motores a Diésel
+2018,NUDI18,Profesional Técnico-Bachiller en Nutrición y Dietética,PT-B en Nutrición y Dietética
+2018,OPTO18,Profesional Técnico-Bachiller en Optometría,PT-B  en Optometría
+2018,DRON19,Profesional Técnico-Bachiller en Pilotaje de Drones,PT-B  en Pilotaje de Drones
+2018,PLAS18,Profesional Técnico-Bachiller en Plásticos,PT-B  en Plásticos
+2018,PRIA18,Profesional Técnico-Bachiller en Procesamiento Industrial de Alimentos,PT-B  en Procesamiento Industrial de Alimentos
+2018,PROC18,Profesional Técnico-Bachiller en Producción de Calzado,PT-B  en Producción de Calzado
+2018,PTPA18,Profesional Técnico-Bachiller en Producción y Transformación de Productos Acuícolas,PT-B  en Producción y Transformación de Productos Acuícolas
+2018,PROI18,Profesional Técnico-Bachiller en Productividad Industrial,PT-B  en Productividad Industrial
+2018,QUIN18,Profesional Técnico-Bachiller en Química Industrial,PT-B  en Química Industrial
+2018,RECL18,Profesional Técnico-Bachiller en Refrigeración y Climatización,PT-B en Refrigeración y Climatización
+2018,SALU18,Profesional Técnico-Bachiller en Salud Comunitaria,PT-B  en Salud Comunitaria
+2018,SHPC18,Profesional Técnico-Bachiller en Seguridad e Higiene y Protección Civil,PT-B  en Seguridad e Higiene y Protección Civil
+2018,SEKA18,Profesional Técnico-Bachiller en Sistemas Electrónicos de Aviación,PT-B  en Sistemas Electrónicos de Aviación
+2018,SOIN20,Profesional Técnico-Bachiller en Soldaduras Industriales,PT-B en Soldaduras Industriales
+2018,SOMA18,Profesional Técnico-Bachiller en Soporte y Mantenimiento de Equipo de Cómputo,PT-B en Soporte y Mantenimiento de Equipo de Cómputo
+2018,TELE18,Profesional Técnico-Bachiller en Telecomunicaciones,PT-B  en Telecomunicaciones
+2018,TERA18,Profesional Técnico-Bachiller en Terapia Respiratoria,PT-B  en Terapia Respiratoria
+2018,TEXT18,Profesional Técnico-Bachiller en Textil,PT-B  en Textil
+2018,TRFR21,Profesional Técnico-Bachiller en Transporte Ferroviario,PT-B en Transporte Ferroviario
+2018,TURI22,Profesional Técnico-Bachiller en Turismo,PT-B en Turismo
+2018,MIME18,Profesional Técnico-Bachiller Minero Metalurgista,PT-B  Minero Metalurgista
+2018,PROCEIES,Programa de Complementación de Estudios para Ingreso a la Educación Superior,PROCEIES
+2023,ABIB23,Profesional Técnico-Bachiller Asistente Bibliotecario,PT-B Asistente Bibliotecario
+2023,ASDI23,Profesional Técnico-Bachiller Asistente Directivo,PT-B Asistente Directivo
+2023,DENT23,Profesional Técnico-Bachiller Asistente y Protesista Dental,PT-B Asistente y Protesista Dental
+2023,ADMO23,Profesional Técnico-Bachiller en Administración,PT-B en Administración
+2023,AGRO23,Profesional Técnico-Bachiller en Agrotecnología,PT-B en Agrotecnología
+2023,ALBE23,Profesional Técnico-Bachiller en Alimentos y Bebidas,PT-B en Alimentos y Bebidas
+2023,ARTE23,Profesional Técnico-Bachiller en Artes Gráficas,PT-B en Artes Gráficas
+2023,TRAN23,Profesional Técnico-Bachiller en Autotransporte,PT-B en Autotransporte
+2023,ATRO23,Profesional Técnico-Bachiller en Autotrónica,PT-B en Autotrónica
+2023,CDIA23,Profesional Técnico-Bachiller en Ciencia de Datos e Inteligencia Artificial,PT-B en Ciencia de Datos e Inteligencia Artificial
+2023,CCAM23,Profesional Técnico-Bachiller en Conservación del Medio Ambiente,PT-B en Conservación del Medio Ambiente
+2023,CONS23,Profesional Técnico-Bachiller en Construcción,PT-B en Construcción
+2023,CONA23,Profesional Técnico-Bachiller en Contabilidad,PT-B en Contabilidad
+2023,COCA23,Profesional Técnico-Bachiller en Control de Calidad,PT-B en Control de Calidad
+2023,CURT23,Profesional Técnico-Bachiller en Curtiduría,PT-B en Curtiduría
+2023,ELIN23,Profesional Técnico-Bachiller en Electricidad Industrial,PT-B en Electricidad Industrial
+2023,EMEC23,Profesional Técnico-Bachiller en Electromecánica Industrial,PT-B en Electromecánica Industrial
+2023,ENCO23,Profesional Técnico-Bachiller en Enfermería Comunitaria,PT-B en Enfermería Comunitaria
+2023,ENFE23,Profesional Técnico-Bachiller en Enfermería General,PT-B en Enfermería General
+2023,ESCE23,Profesional Técnico-Bachiller en Escenotecnia,PT-B en Escenotecnia
+2023,EXPE23,Profesional Técnico-Bachiller en Exploración y Producción Petrolera,PT-B en Exploración y Producción Petrolera
+2023,EGAD23,Profesional Técnico-Bachiller en Expresión Gráfica Digital,PT-B en Expresión Gráfica Digital
+2023,FONO23,Profesional Técnico-Bachiller en Fonoaudiología,PT-B en Fonoaudiología
+2023,FAEN23,Profesional Técnico-Bachiller en Fuentes Alternas de Energía,PT-B en Fuentes Alternas de Energía
+2023,INAU23,Profesional Técnico-Bachiller en Industria Automotriz,PT-B en Industria Automotriz
+2023,INVE23,Profesional Técnico-Bachiller en Industria del Vestido,PT-B en Industria del Vestido
+2023,INFO23,Profesional Técnico-Bachiller en Informática,PT-B en Informática
+2023,LACL23,Profesional Técnico-Bachiller en Laboratorio Clínico,PT-B en Laboratorio Clínico
+2023,LARE23,Profesional Técnico-Bachiller en Laministería y Recubrimiento de las Aeronaves,PT-B en Laministería y Recubrimiento de las Aeronaves
+2023,MAUT23,Profesional Técnico-Bachiller en Mantenimiento Automotriz,PT-B en Mantenimiento Automotriz
+2023,MMOP23,Profesional Técnico-Bachiller en Mantenimiento de Motores y Planeadores,PT-B en Mantenimiento de Motores y Planeadores
+2023,MSIA23,Profesional Técnico-Bachiller en Mantenimiento de Sistemas Automáticos,PT-B en Mantenimiento de Sistemas Automáticos
+2023,EKIN23,Profesional Técnico-Bachiller en Mantenimiento de Sistemas Electrónicos,PT-B en Mantenimiento de Sistemas Electrónicos
+2023,MAHE23,Profesional Técnico-Bachiller en Máquinas Herramienta,PT-B en Máquinas Herramienta
+2023,MECA23,Profesional Técnico-Bachiller en Mecatrónica,PT-B en Mecatrónica
+2023,METM23,Profesional Técnico-Bachiller en Metalmecánica,PT-B en Metalmecánica
+2023,MTGA23,Profesional Técnico-Bachiller en Metalurgia,PT-B en Metalurgia
+2023,MODI23,Profesional Técnico-Bachiller en Motores a Diésel,PT-B en Motores a Diésel
+2023,NUDI23,Profesional Técnico-Bachiller en Nutrición y Dietética,PT-B en Nutrición y Dietética
+2023,OMMP23,Profesional Técnico-Bachiller en Operación y Mantenimiento de Maquinaria Pesada,PT-B en Operación y Mantenimiento de Maquinaria Pesada
+2023,OPTO23,Profesional Técnico-Bachiller en Optometría,PT-B en Optometría
+2023,DRON23,Profesional Técnico-Bachiller en Pilotaje de Drones,PT-B en Pilotaje de Drones
+2023,PLAS23,Profesional Técnico-Bachiller en Plásticos,PT-B en Plásticos
+2023,PRIA23,Profesional Técnico-Bachiller en Procesamiento Industrial de Alimentos,PT-B en Procesamiento Industrial de Alimentos
+2023,PROC23,Profesional Técnico-Bachiller en Producción de Calzado,PT-B en Producción de Calzado
+2023,PTPA23,Profesional Técnico-Bachiller en Producción y Transformación de Productos Acuícolas,PT-B en Producción y Transformación de Productos Acuícolas
+2023,PROI23,Profesional Técnico-Bachiller en Productividad Industrial,PT-B en Productividad Industrial
+2023,QUIN23,Profesional Técnico-Bachiller en Química Industrial,PT-B en Química Industrial
+2023,RRXX23,Profesional Técnico-Bachiller en Radiología e Imagen,PT-B en Radiología e Imagen
+2023,RDTT23,Profesional Técnico-Bachiller en Radioterapia,PT-B en Radioterapia
+2023,RECL23,Profesional Técnico-Bachiller en Refrigeración y Climatización,PT-B en Refrigeración y Climatización
+2023,SALU23,Profesional Técnico-Bachiller en Salud Comunitaria,PT-B en Salud Comunitaria
+2023,SHPC23,Profesional Técnico-Bachiller en Seguridad e Higiene y Protección Civil,PT-B en Seguridad e Higiene y Protección Civil
+2023,SEKA23,Profesional Técnico-Bachiller en Sistemas Electrónicos de Aviación,PT-B en Sistemas Electrónicos de Aviación
+2023,SOIN23,Profesional Técnico-Bachiller en Soldaduras Industriales,PT-B en Soldaduras Industriales
+2023,SOMA23,Profesional Técnico-Bachiller en Soporte y Mantenimiento de Equipo de Cómputo,PT-B en Soporte y Mantenimiento de Equipo de Cómputo
+2023,TELE23,Profesional Técnico-Bachiller en Telecomunicaciones,PT-B en Telecomunicaciones
+2023,TEFI23,Profesional Técnico-Bachiller en Terapia Física,PT-B en Terapia Física
+2023,TEOC23,Profesional Técnico-Bachiller en Terapia ocupacional,PT-B en Terapia ocupacional
+2023,TERA23,Profesional Técnico-Bachiller en Terapia Respiratoria,PT-B en Terapia Respiratoria
+2023,TRFR23,Profesional Técnico-Bachiller en Transporte Ferroviario,PT-B en Transporte Ferroviario
+2023,TURI23,Profesional Técnico-Bachiller en Turismo,PT-B en Turismo
+2023,MIME23,Profesional Técnico-Bachiller Minero Metalurgista,PT-B Minero Metalurgista
+2023,TEXT23,Profesional Técnico-Bachiller Textil,PT-B Textil
+2025,ASDI25,Profesional Técnico-Bachiller Asistente Directivo,PT-B Asistente Directivo
+2025,DENT25,Profesional Técnico-Bachiller Asistente y Protesista Dental,PT-B Asistente y Protesista Dental
+2025,ADMO25,Profesional Técnico-Bachiller en Administración,PT-B en Administración
+2025,AGRO25,Profesional Técnico-Bachiller en Agrotecnología,PT-B en Agrotecnología
+2025,ALBE25,Profesional Técnico-Bachiller en Alimentos y Bebidas,PT-B en Alimentos y Bebidas
+2025,ARTE25,Profesional Técnico-Bachiller en Artes Gráficas,PT-B en Artes Gráficas
+2025,TRAN25,Profesional Técnico-Bachiller en Autotransporte,PT-B en Autotransporte
+2025,ATRO25,Profesional Técnico-Bachiller en Autotrónica,PT-B en Autotrónica
+2025,CDIA25,Profesional Técnico-Bachiller en Ciencia de Datos e Inteligencia Artificial,PT-B en Ciencia de Datos e Inteligencia Artificial
+2025,CCAM25,Profesional Técnico-Bachiller en Conservación del Medio Ambiente,PT-B en Conservación del Medio Ambiente
+2025,CONS25,Profesional Técnico-Bachiller en Construcción,PT-B en Construcción
+2025,CONA25,Profesional Técnico-Bachiller en Contabilidad,PT-B en Contabilidad
+2025,COCA25,Profesional Técnico-Bachiller en Control de Calidad,PT-B en Control de Calidad
+2025,CURT25,Profesional Técnico-Bachiller en Curtiduría,PT-B en Curtiduría
+2025,ELIN25,Profesional Técnico-Bachiller en Electricidad Industrial,PT-B en Electricidad Industrial
+2025,EMEC25,Profesional Técnico-Bachiller en Electromecánica Industrial,PT-B en Electromecánica Industrial
+2025,ENCO25,Profesional Técnico-Bachiller en Enfermería Comunitaria,PT-B en Enfermería Comunitaria
+2025,ENFE25,Profesional Técnico-Bachiller en Enfermería General,PT-B en Enfermería General
+2025,ESCE25,Profesional Técnico-Bachiller en Escenotecnia,PT-B en Escenotecnia
+2025,EXPE25,Profesional Técnico-Bachiller en Exploración y Producción Petrolera,PT-B en Exploración y Producción Petrolera
+2025,EGAD25,Profesional Técnico-Bachiller en Expresión Gráfica Digital,PT-B en Expresión Gráfica Digital
+2025,FAEN25,Profesional Técnico-Bachiller en Fuentes Alternas de Energía,PT-B en Fuentes Alternas de Energía
+2025,INAU25,Profesional Técnico-Bachiller en Industria Automotriz,PT-B en Industria Automotriz
+2025,INVE25,Profesional Técnico-Bachiller en Industria del Vestido,PT-B en Industria del Vestido
+2025,INFO25,Profesional Técnico-Bachiller en Informática,PT-B en Informática
+2025,LARE25,Profesional Técnico-Bachiller en Laministería y Recubrimiento de las Aeronaves,PT-B en Laministería y Recubrimiento de las Aeronaves
+2025,MAUT25,Profesional Técnico-Bachiller en Mantenimiento Automotriz,PT-B en Mantenimiento Automotriz
+2025,MMOP25,Profesional Técnico-Bachiller en Mantenimiento de Motores y Planeadores,PT-B en Mantenimiento de Motores y Planeadores
+2025,MSIA25,Profesional Técnico-Bachiller en Mantenimiento de Sistemas Automáticos,PT-B en Mantenimiento de Sistemas Automáticos
+2025,EKIN25,Profesional Técnico-Bachiller en Mantenimiento de Sistemas Electrónicos,PT-B en Mantenimiento de Sistemas Electrónicos
+2025,MAHE25,Profesional Técnico-Bachiller en Máquinas Herramienta,PT-B en Máquinas Herramienta
+2025,MECA25,Profesional Técnico-Bachiller en Mecatrónica,PT-B en Mecatrónica
+2025,METM25,Profesional Técnico-Bachiller en Metalmecánica,PT-B en Metalmecánica
+2025,MTGA25,Profesional Técnico-Bachiller en Metalurgia,PT-B en Metalurgia
+2025,MODI25,Profesional Técnico-Bachiller en Motores a Diésel,PT-B en Motores a Diésel
+2025,NUDI25,Profesional Técnico-Bachiller en Nutrición y Dietética,PT-B en Nutrición y Dietética
+2025,OMMP25,Profesional Técnico-Bachiller en Operación y Mantenimiento de Maquinaria Pesada,PT-B en Operación y Mantenimiento de Maquinaria Pesada
+2025,OPTO25,Profesional Técnico-Bachiller en Optometría,PT-B en Optometría
+2025,DRON25,Profesional Técnico-Bachiller en Pilotaje de Drones,PT-B en Pilotaje de Drones
+2025,PLAS25,Profesional Técnico-Bachiller en Plásticos,PT-B en Plásticos
+2025,PRIA25,Profesional Técnico-Bachiller en Procesamiento Industrial de Alimentos,PT-B en Procesamiento Industrial de Alimentos
+2025,PROC25,Profesional Técnico-Bachiller en Producción de Calzado,PT-B en Producción de Calzado
+2025,PTPA25,Profesional Técnico-Bachiller en Producción y Transformación de Productos Acuícolas,PT-B en Producción y Transformación de Productos Acuícolas
+2025,PROI25,Profesional Técnico-Bachiller en Productividad Industrial,PT-B en Productividad Industrial
+2025,QUIN25,Profesional Técnico-Bachiller en Química Industrial,PT-B en Química Industrial
+2025,RECL25,Profesional Técnico-Bachiller en Refrigeración y Climatización,PT-B en Refrigeración y Climatización
+2025,SALU25,Profesional Técnico-Bachiller en Salud Comunitaria,PT-B en Salud Comunitaria
+2025,SHPC25,Profesional Técnico-Bachiller en Seguridad e Higiene y Protección Civil,PT-B en Seguridad e Higiene y Protección Civil
+2025,SEKA25,Profesional Técnico-Bachiller en Sistemas Electrónicos de Aviación,PT-B en Sistemas Electrónicos de Aviación
+2025,SOIN25,Profesional Técnico-Bachiller en Soldaduras Industriales,PT-B en Soldaduras Industriales
+2025,SOMA25,Profesional Técnico-Bachiller en Soporte y Mantenimiento de Equipo de Cómputo,PT-B en Soporte y Mantenimiento de Equipo de Cómputo
+2025,TELE25,Profesional Técnico-Bachiller en Telecomunicaciones,PT-B en Telecomunicaciones
+2025,TERA25,Profesional Técnico-Bachiller en Terapia Respiratoria,PT-B en Terapia Respiratoria
+2025,TRFR25,Profesional Técnico-Bachiller en Transporte Ferroviario,PT-B en Transporte Ferroviario
+2025,TURI25,Profesional Técnico-Bachiller en Turismo,PT-B en Turismo
+2025,MIME25,Profesional Técnico-Bachiller Minero Metalurgista,PT-B Minero Metalurgista
+2025,TEXT25,Profesional Técnico-Bachiller Textil,PT-B Textil

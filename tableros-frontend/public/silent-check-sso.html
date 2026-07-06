@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // Este archivo es requerido por keycloak-js para la verificación
+      // silenciosa de sesión (check-sso) sin redirigir al usuario.
+      // Debe estar accesible en: http://localhost:3000/silent-check-sso.html
+      parent.postMessage(location.href, location.origin)
+    </script>
+  </body>
+</html>

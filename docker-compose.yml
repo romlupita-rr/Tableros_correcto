@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: tableros-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: tablero
+      POSTGRES_USER: lupis
+      POSTGRES_PASSWORD: "123456"
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: ./tableros-backend
+      dockerfile: Dockerfile
+    container_name: tableros-back
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    env_file:
+      - ./tableros-backend/.env
+    environment:
+      - DB_HOST=db
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./tableros-backend:/app
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./tableros-frontend
+      dockerfile: dockerfile
+    container_name: tableros-front
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    env_file:
+      - ./tableros-frontend/.env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./tableros-frontend:/app
+      - /app/node_modules # Evita conflictos con los node_modules de tu Linux
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:

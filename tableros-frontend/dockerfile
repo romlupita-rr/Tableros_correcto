@@ -1,0 +1,14 @@
+FROM node:24-alpine
+
+# Instalamos git (necesario para el Source Control de VS Code al hacer Attach)
+RUN apk add --no-cache git
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
+EXPOSE 8000
+
+# Tu comando exacto con los flags necesarios para que sea accesible externamente
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "8000"]
