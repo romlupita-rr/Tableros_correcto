@@ -180,9 +180,8 @@ def calcular_metricas_plantel(df, cve_plantel):
             regulares = 0
 
         irregulares = total_matricula - regulares
-
-        # =====================================================
-        # 📊 NUEVA EXTRACCIÓN: PROMEDIO POR CARRERA PARA LA GRÁFICA
+# =====================================================
+        # 📊 NUEVA EXTRACCIÓN: PROMEDIO POR CARRERA PARA LA GRÁFICA (SEGURO)
         # =====================================================
         carreras_list = []
         if "cveplanestudio" in df_filtered.columns and col_calif in df_filtered.columns:
@@ -190,24 +189,25 @@ def calcular_metricas_plantel(df, cve_plantel):
                 mapa_exacto = {}
                 mapa_raiz = {}
                 if CSV_CARRERAS.exists():
+                    # 💡 Volvemos a latin1 por estabilidad del archivo, pero re-codificamos abajo para limpiar
                     df_cat = pd.read_csv(CSV_CARRERAS, skiprows=1, names=["modelo", "cve", "descripcion", "descorta"], encoding="latin1")
                     for _, row in df_cat.iterrows():
                         cve_orig = str(row["cve"]).upper().strip()
                         if cve_orig and cve_orig != "NAN":
-                            mapa_exacto[cve_orig] = str(row["descripcion"]).strip()
+                            # 💡 Corrige textos rotos de codificación mezclada (ej: TÃ©cnico -> Técnico)
+                            raw_desc = str(row["descripcion"]).strip()
+                            try:
+                                desc_limpia = raw_desc.encode('latin1').decode('utf-8')
+                            except Exception:
+                                desc_limpia = raw_desc
+                            
+                            mapa_exacto[cve_orig] = desc_limpia
                             if len(cve_orig) >= 4:
-                                mapa_raiz[cve_orig[:4]] = str(row["descripcion"]).strip()
+                                mapa_raiz[cve_orig[:4]] = desc_limpia
 
                 df_car = df_filtered.copy()
                 df_car["cveplanestudio"] = df_car["cveplanestudio"].astype(str).str.upper().str.strip()
-                
-                df_res = (
-                    df_car.dropna(subset=["calif_num", "cveplanestudio"])
-                    .groupby("cveplanestudio")
-                    .agg(promedio=("calif_num", "mean"))
-                    .reset_index()
-                )
-                df_res["promedio"] = df_res["promedio"].round(1) # Un decimal como en tu imagen (Ej: 8.9)
+                df_car["calif_num"] = pd.to_numeric(df_car[col_calif], errors="coerce")
 
                 def obtener_nombre_carrera(cve):
                     cve_clean = str(cve).upper().strip()
@@ -217,22 +217,55 @@ def calcular_metricas_plantel(df, cve_plantel):
 
                 def limpiar_texto_carrera(texto):
                     t = str(texto)
+                    # Quita el texto basura recurrente de codificación si queda alguno
                     replacements = {
                         "TÃ©cnico": "Técnico", "InformÃ¡tica": "Informática",
                         "EnfermerÃ­a": "Enfermería", "MecatrÃ³nica": "Mecatrónica",
                         "AdministraciÃ³n": "Administración", "Contabilidad": "Contabilidad"
                     }
                     for k, v in replacements.items(): t = t.replace(k, v)
-                    # Quita el prefijo institucional largo para que se lea limpio como en tu diseño
                     t = t.replace("Profesional Técnico-Bachiller en ", "").replace("Profesional Técnico en ", "")
-                    t = t.replace("Profesional TÃ©cnico-Bachiller en ", "")
                     return t.strip()
 
-                df_res["carrera"] = df_res["cveplanestudio"].apply(obtener_nombre_carrera).apply(limpiar_texto_carrera)
+                df_car["carrera_nombre"] = df_car["cveplanestudio"].apply(obtener_nombre_carrera).apply(limpiar_texto_carrera)
+                
+                df_res = (
+                    df_car.dropna(subset=["calif_num", "carrera_nombre"])
+                    .groupby("carrera_nombre")
+                    .agg(promedio=("calif_num", "mean"))
+                    .reset_index()
+                )
+                
+                df_res["promedio"] = df_res["promedio"].round(1)
+                df_res = df_res.rename(columns={"carrera_nombre": "carrera"})
+
+        
                 carreras_list = df_res.sort_values("promedio", ascending=False)[["carrera", "promedio"]].to_dict("records")
+           
             except Exception:
                 carreras_list = []
-        
+        # ... (dentro de calcular_metricas_plantel)
+                
+                # 💡 ACTUALIZACIÓN: Incluir alumnos y calcular demanda
+                df_res = (
+                    df_car.dropna(subset=["calif_num", "carrera_nombre"])
+                    .groupby("carrera_nombre")
+                    .agg(
+                        promedio=("calif_num", "mean"), 
+                        alumnos=("calif_num", "count") # Conteo de alumnos
+                    )
+                    .reset_index()
+                )
+                
+                # Cálculo de demanda porcentual respecto al total
+                df_res["demanda"] = (df_res["alumnos"] / total_matricula * 100).round(1)
+                df_res["promedio"] = df_res["promedio"].round(1)
+                df_res = df_res.rename(columns={"carrera_nombre": "carrera"})
+
+                # Ordenar por demanda (de mayor a menor)
+                carreras_list = df_res.sort_values("demanda", ascending=False)[["carrera", "demanda", "promedio", "alumnos"]].to_dict("records")
+                
+                # ... (resto de la función)
         return {
             "matricula": total_matricula,
             "promedio": promedio_gen,

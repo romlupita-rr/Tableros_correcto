@@ -389,103 +389,107 @@ export default function DashboardPlantel() {
           </div>
         </div>
 
-        {/* =====================================================
-            📉 NUEVA SECCIÓN: COMPARACIÓN DE CARRERAS POR PLANTEL
-        ===================================================== */}
-        <div style={styles.graficaCard}>
-          <h3 style={styles.graficaTitle}>Comparación de Promedio de Carreras por Plantel</h3>
-          <p style={styles.graficaSubtitle}>
-            Promedio por carrera — izquierda: <span style={{ fontWeight: "600" }}>{nombrePlantelP1 || "Plantel 1"}</span> | derecha: <span style={{ fontWeight: "600" }}>{nombrePlantelP2 || "Plantel 2"}</span>
-          </p>
+   {/* =====================================================
+    📉 SECCIÓN: COMPARACIÓN DE CARRERAS POR PLANTEL
+===================================================== */}
+<div style={styles.graficaCard}>
+  <h3 style={styles.graficaTitle}>Comparación de Promedio de Carreras por Plantel</h3>
+  <p style={styles.graficaSubtitle}>
+    Promedio por carrera — izquierda: <span style={{ fontWeight: "600" }}>{nombrePlantelP1 || "Plantel 1"}</span> | derecha: <span style={{ fontWeight: "600" }}>{nombrePlantelP2 || "Plantel 2"}</span>
+  </p>
 
-          <div style={styles.gridCarreras}>
-            
-            {/* COLUMNA IZQUIERDA: PLANTEL 1 (VERDE) */}
-            <div style={styles.columnaCarrera}>
-              <h4 style={{ ...styles.tituloPlantelCarrera, color: "#00a650" }}>
-                {nombrePlantelP1 || "Plantel 1"}
-              </h4>
-              <div style={{ width: "100%", height: 280, marginTop: "15px" }}>
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart
-                    layout="vertical"
-                    data={datosComparativos?.p1?.carreras || []}
-                    margin={{ top: 5, right: 15, left: 5, bottom: 5 }}
-                  >
-                    <XAxis type="number" domain={[0, 10]} hide />
-                    <YAxis
-                      type="category"
-                      dataKey="carrera"
-                      axisLine={false}
-                      tickLine={false}
-                      tick={{ fill: "#64748b", fontSize: 13 }}
-                      width={110}
-                    />
-                    <Bar
-                      dataKey="promedio"
-                      fill="#00a650"
-                      radius={[10, 10, 10, 10]}
-                      background={{ fill: "#f1f5f9", radius: 10 }}
-                      barSize={20}
-                    >
-                      <LabelList
-                        dataKey="promedio"
-                        position="insideRight"
-                        offset={12}
-                        fill="#ffffff"
-                        fontWeight="bold"
-                        fontSize={12}
-                      />
-                    </Bar>
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-            </div>
+  <div style={styles.gridCarreras}>
+    
+    {/* COLUMNA IZQUIERDA: PLANTEL 1 (VERDE) */}
+    <div style={styles.columnaCarrera}>
+      <h4 style={{ ...styles.tituloPlantelCarrera, color: "#00a650" }}>
+        {nombrePlantelP1 || "Plantel 1"}
+      </h4>
+      <div style={{ width: "100%", marginTop: "15px" }}>
+        {/* 💡 CORRECCIÓN: Se define un height fijo de 320 al ResponsiveContainer */}
+        <ResponsiveContainer width="100%" height={320}>
+          <BarChart
+            layout="vertical"
+            data={datosComparativos?.p1?.carreras || []}
+            margin={{ top: 10, right: 20, left: 5, bottom: 5 }}
+          >
+            <XAxis type="number" domain={[0, 10]} hide />
+            <YAxis
+              type="category"
+              dataKey="carrera"
+              axisLine={false}
+              tickLine={false}
+              tick={{ fill: "#64748b", fontSize: 12 }}
+              width={180}
+              tickFormatter={(value) => value && value.length > 25 ? `${value.substring(0, 23)}...` : value}
+            />
+            <Bar
+              dataKey="promedio"
+              fill="#00a650"
+              radius={[10, 10, 10, 10]}
+              background={{ fill: "#f1f5f9", radius: 10 }}
+              barSize={16}
+            >
+              <LabelList
+                dataKey="promedio"
+                position="insideRight"
+                offset={12}
+                fill="#ffffff"
+                fontWeight="bold"
+                fontSize={12}
+              />
+            </Bar>
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+    </div>
 
-            {/* COLUMNA DERECHA: PLANTEL 2 (AZUL) */}
-            <div style={styles.columnaCarrera}>
-              <h4 style={{ ...styles.tituloPlantelCarrera, color: "#0066ff" }}>
-                {nombrePlantelP2 || "Plantel 2"}
-              </h4>
-              <div style={{ width: "100%", height: 280, marginTop: "15px" }}>
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart
-                    layout="vertical"
-                    data={datosComparativos?.p2?.carreras || []}
-                    margin={{ top: 5, right: 15, left: 5, bottom: 5 }}
-                  >
-                    <XAxis type="number" domain={[0, 10]} hide />
-                    <YAxis
-                      type="category"
-                      dataKey="carrera"
-                      axisLine={false}
-                      tickLine={false}
-                      tick={{ fill: "#64748b", fontSize: 13 }}
-                      width={110}
-                    />
-                    <Bar
-                      dataKey="promedio"
-                      fill="#0066ff"
-                      radius={[10, 10, 10, 10]}
-                      background={{ fill: "#f1f5f9", radius: 10 }}
-                      barSize={20}
-                    >
-                      <LabelList
-                        dataKey="promedio"
-                        position="insideRight"
-                        offset={12}
-                        fill="#ffffff"
-                        fontWeight="bold"
-                        fontSize={12}
-                      />
-                    </Bar>
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-            </div>
+    {/* COLUMNA DERECHA: PLANTEL 2 (AZUL) */}
+    <div style={styles.columnaCarrera}>
+      <h4 style={{ ...styles.tituloPlantelCarrera, color: "#0066ff" }}>
+        {nombrePlantelP2 || "Plantel 2"}
+      </h4>
+      <div style={{ width: "100%", marginTop: "15px" }}>
+        {/* 💡 CORRECCIÓN: Se define un height fijo de 320 al ResponsiveContainer */}
+        <ResponsiveContainer width="100%" height={320}>
+          <BarChart
+            layout="vertical"
+            data={datosComparativos?.p2?.carreras || []}
+            margin={{ top: 10, right: 20, left: 5, bottom: 5 }}
+          >
+            <XAxis type="number" domain={[0, 10]} hide />
+            <YAxis
+              type="category"
+              dataKey="carrera"
+              axisLine={false}
+              tickLine={false}
+              tick={{ fill: "#64748b", fontSize: 12 }}
+              width={180}
+              tickFormatter={(value) => value && value.length > 25 ? `${value.substring(0, 23)}...` : value}
+            />
+            <Bar
+              dataKey="promedio"
+              fill="#0066ff"
+              radius={[10, 10, 10, 10]}
+              background={{ fill: "#f1f5f9", radius: 10 }}
+              barSize={16}
+            >
+              <LabelList
+                dataKey="promedio"
+                position="insideRight"
+                offset={12}
+                fill="#ffffff"
+                fontWeight="bold"
+                fontSize={12}
+              />
+            </Bar>
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+    </div>
 
-          </div>
-        </div>
+  </div>
+</div>
 
       </div>
     </div>
