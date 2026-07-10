@@ -289,119 +289,201 @@ export default function AdminDashboard() {
             </BarChart>
           </ResponsiveContainer>
         </div>
-        {/* CARRERAS */}
+  {/* CARRERAS (BARRAS HORIZONTALES CON TEXTO EN NEGRO Y MÁS GRANDE) */}
         <div style={styles.pieGrid}>
+          
+          {/* TOP MEJOR DESEMPEÑO */}
           <div style={styles.chartBox}>
             <h2>Top 5 Carreras — Mejor Desempeño</h2>
-            <ResponsiveContainer width="100%" height={350}>
-              <PieChart>
-                <Pie
-                  data={formatPieData(datos.top_carreras.mejores)}
-                  dataKey="value"
-                  nameKey="name"
-                  outerRadius={120}
-                  label
-                >
-                  {formatPieData(datos.top_carreras.mejores).map((_, index) => (
-                    <Cell key={index} fill={coloresVerdes[index % coloresVerdes.length]} />
-                  ))}
-                </Pie>
-                <Tooltip />
+            <ResponsiveContainer width="100%" height={380}>
+              <BarChart
+                layout="vertical"
+                data={(datos?.top_carreras?.mejores || []).map(item => ({
+                  name: item.carrera || item.cveplanestudio,
+                  promedio: Number(item.promedio || item.calificacion || item.value || 0)
+                }))}
+                margin={{ top: 20, right: 30, left: 10, bottom: 5 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#e2e8f0" />
+                <XAxis type="number" domain={[0, 10]} stroke="#64748b" fontSize={11} />
+                
+                {/* 📌 EJE Y MODIFICADO: Texto negro, más grande y con más espacio */}
+                <YAxis 
+                  type="category" 
+                  dataKey="name" 
+                  stroke="#64748b" // Mantiene la línea del eje sutil
+                  tick={{ fill: '#000000', fontSize: 13, fontWeight: '500' }} // Letra negra y más grande
+                  width={180} // Mayor ancho para que no se encime el texto grande
+                  tickFormatter={(text) => text.length > 25 ? `${text.substring(0, 23)}...` : text}
+                />
+                
+                <Tooltip 
+                  cursor={{ fill: '#f8fafc' }}
+                  formatter={(value) => [`${Number(value).toFixed(2)}`, 'Promedio General']}
+                />
                 <Legend />
-              </PieChart>
+                
+                <Bar 
+                  dataKey="promedio" 
+                  name="Promedio General" 
+                  fill="#0f766e" 
+                  stackId="a"    
+                  radius={[0, 4, 4, 0]} 
+                  barSize={24}
+                />
+              </BarChart>
             </ResponsiveContainer>
           </div>
+
+          {/* TOP MENOR DESEMPEÑO */}
           <div style={styles.chartBox}>
             <h2>Top 5 Carreras — Menor Desempeño</h2>
-            <ResponsiveContainer width="100%" height={350}>
-              <PieChart>
-                <Pie
-                  data={formatPieData(datos.top_carreras.peores)}
-                  dataKey="value"
-                  nameKey="name"
-                  outerRadius={120}
-                  label
-                >
-                  {formatPieData(datos.top_carreras.peores).map((_, index) => (
-                    <Cell key={index} fill={coloresRojos[index % coloresRojos.length]} />
-                  ))}
-                </Pie>
-                <Tooltip />
+            <ResponsiveContainer width="100%" height={380}>
+              <BarChart
+                layout="vertical"
+                data={(datos?.top_carreras?.peores || []).map(item => ({
+                  name: item.carrera || item.cveplanestudio,
+                  promedio: Number(item.promedio || item.calificacion || item.value || 0)
+                }))}
+                margin={{ top: 20, right: 30, left: 10, bottom: 5 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#e2e8f0" />
+                <XAxis type="number" domain={[0, 10]} stroke="#64748b" fontSize={11} />
+                
+                {/* 📌 EJE Y MODIFICADO: Texto negro, más grande y con más espacio */}
+                <YAxis 
+                  type="category" 
+                  dataKey="name" 
+                  stroke="#64748b" 
+                  tick={{ fill: '#000000', fontSize: 13, fontWeight: '500' }} 
+                  width={180} 
+                  tickFormatter={(text) => text.length > 25 ? `${text.substring(0, 23)}...` : text}
+                />
+                
+                <Tooltip 
+                  cursor={{ fill: '#f8fafc' }}
+                  formatter={(value) => [`${Number(value).toFixed(2)}`, 'Promedio General']}
+                />
                 <Legend />
-              </PieChart>
+                
+                <Bar 
+                  dataKey="promedio" 
+                  name="Promedio General" 
+                  fill="#991b1b" 
+                  stackId="a"
+                  radius={[0, 4, 4, 0]} 
+                  barSize={24}
+                />
+              </BarChart>
             </ResponsiveContainer>
           </div>
+
         </div>
-        {/* PLANTELES */}
+   {/* PLANTELES (CORREGIDO: SÓLO PROMEDIO) */}
         <div style={styles.pieGrid}>
+          
+          {/* MEJORES PLANTELES */}
           <div style={styles.chartBox}>
             <h2>🏆 Top Planteles</h2>
-            {datos.top_planteles.mejores.map((p, i) => (
+            {datos?.top_planteles?.mejores?.map((p, i) => (
               <div key={i} style={styles.rankCardGreen}>
                 <div style={styles.rankCircleGreen}>{i + 1}</div>
                 <div>
                   <div style={styles.rankTitle}>{p.descripcion}</div>
                   <div style={styles.rankSub}>
-                    Estado: {p.estado || "Desconocido"} • Promedio: {p.promedio} • {p.aprovechamiento}%
+                    {/* 📌 Se removió el porcentaje de aprovechamiento */}
+                    Estado: {p.estado || "Desconocido"} • Promedio: {p.promedio}
                   </div>
                 </div>
               </div>
             ))}
           </div>
+
+          {/* PEORES PLANTELES */}
           <div style={styles.chartBox}>
             <h2>⚠️ Peores Planteles</h2>
-            {datos.top_planteles.peores.map((p, i) => (
+            {datos?.top_planteles?.peores?.map((p, i) => (
               <div key={i} style={styles.rankCardRed}>
                 <div style={styles.rankCircleRed}>{i + 1}</div>
                 <div>
                   <div style={styles.rankTitle}>{p.descripcion}</div>
                   <div style={styles.rankSub}>
-                    Estado: {p.estado || "Desconocido"} • Promedio: {p.promedio} • {p.aprovechamiento}%
+                    {/* 📌 Se removió el porcentaje de aprovechamiento */}
+                    Estado: {p.estado || "Desconocido"} • Promedio: {p.promedio}
                   </div>
                 </div>
               </div>
             ))}
           </div>
+
         </div>
-        {/* TOP 10 DEMANDA */}
-        <div style={styles.chartBox}>
-          <h2>🔥 Top 10 Carreras con Mayor Demanda por Estado</h2>
-          <table style={styles.table}>
-            <thead>
-              <tr style={{ background: "#008A45", color: "white" }}>
-                <th style={{ padding: "10px", textAlign: "left" }}>Estado</th>
-                <th style={{ padding: "10px", textAlign: "left" }}>Carrera</th>
-                <th style={{ padding: "10px", textAlign: "center" }}>Índice de Demanda</th>
-              </tr>
-            </thead>
-            <tbody>
-              {datos.top_demanda_carreras_estado.slice(0, 10).map((item, i) => {
-                const pct = Math.round(item.indice_demanda);
-                const color =
-                  pct >= 85 ? "#16a34a" :
-                  pct >= 75 ? "#f59e0b" :
-                  "#ef4444";
-                return (
-                  <tr key={i} style={{ borderBottom: "1px solid #e2e8f0" }}>
-                    <td style={{ padding: "10px" }}>{item.nombreentidad}</td>
-                    <td style={{ padding: "10px" }}>{item.cveplanestudio}</td>
-                    <td style={{
-                      padding: "10px",
-                      textAlign: "center",
-                      background: color,
-                      color: "white",
-                      fontWeight: "bold"
-                    }}>
-                      {pct}%
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+      {/* 🔥 TOP 10 DEMANDA CON SEMÁFORO CORREGIDO (VERDE, AMARILLO, ROJO) */}
+<div style={styles.chartBox}>
+  <h2 style={{ marginBottom: "15px", color: "#334155" }}>
+    🔥 Top 10 Puntos de Mayor Demanda en el País
+  </h2>
+  
+  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "14px" }}>
+    <thead>
+      <tr style={{ background: "#1e293b", color: "white" }}>
+        <th style={{ padding: "12px", textAlign: "left" }}>Estado</th>
+        <th style={{ padding: "12px", textAlign: "left" }}>Carrera Líder</th>
+        <th style={{ padding: "12px", textAlign: "center" }}>Alumnos Inscritos</th>
+        <th style={{ padding: "12px", textAlign: "center" }}>% Presencia Nacional</th>
+      </tr>
+    </thead>
+    <tbody>
+      {datos.top_demanda_carreras_estado && 
+       datos.top_demanda_carreras_estado.slice(0, 10).map((item, i) => {
+        
+        // 🎨 Asignación del semáforo según la posición en el Top 10
+        let badgeBgColor = "";
+        let badgeTextColor = "white";
+
+        if (i < 3) {
+          // Puestos 1, 2 y 3: Los mejores en demanda
+          badgeBgColor = "#008A45"; // Verde
+          badgeTextColor = "white";
+        } else if (i < 7) {
+          // Puestos 4, 5, 6 y 7: Regulares / Medios
+          badgeBgColor = "#f59e0b"; // Amarillo / Ámbar (da mejor contraste que el amarillo chillón)
+          badgeTextColor = "white";
+        } else {
+          // Puestos 8, 9 y 10: Fatal / Los más bajos del top
+          badgeBgColor = "#ef4444"; // Rojo
+          badgeTextColor = "white";
+        }
+
+        return (
+          <tr key={i} style={{ borderBottom: "1px solid #e2e8f0" }}>
+            <td style={{ padding: "12px", fontWeight: "500" }}>{item.estado}</td>
+            <td style={{ padding: "12px", color: "#475569" }}>{item.carrera}</td>
+            <td style={{ padding: "12px", textAlign: "center", fontWeight: "bold" }}>
+              {item.alumnos.toLocaleString()}
+            </td>
+            <td style={{ padding: "12px", textAlign: "center" }}>
+              <span style={{
+                background: badgeBgColor,
+                color: badgeTextColor,
+                padding: "6px 12px",
+                borderRadius: "6px",
+                fontWeight: "bold",
+                display: "inline-block",
+                minWidth: "65px",
+                boxShadow: "0 1px 2px rgba(0,0,0,0.05)"
+              }}>
+                {item.indice_demanda}%
+              </span>
+            </td>
+          </tr>
+        );
+      })}
+    </tbody>
+  </table>
+</div>
         </div>
       </div>
-    </div>
+  
   );
 }
 

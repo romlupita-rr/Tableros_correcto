@@ -4,7 +4,7 @@ import axios from "axios";
 import {
   BarChart,
   Bar,
- XAxis,
+  XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
@@ -33,8 +33,8 @@ export default function DashboardPlantel() {
 
   // --- DATOS COMPARTIDOS DE LAS TARJETAS ---
   const [datosComparativos, setDatosComparativos] = useState({
-    p1: { matricula: 0, promedio: 0, regulares: 0, regulares_pct: 0, irregulares: 0, irregulares_pct: 0 },
-    p2: { matricula: 0, promedio: 0, regulares: 0, regulares_pct: 0, irregulares: 0, irregulares_pct: 0 }
+    p1: { matricula: 0, promedio: 0, regulares: 0, regulares_pct: 0, irregulares: 0, irregulares_pct: 0, carreras: [] },
+    p2: { matricula: 0, promedio: 0, regulares: 0, regulares_pct: 0, irregulares: 0, irregulares_pct: 0, carreras: [] }
   });
 
   // =====================================================
@@ -137,20 +137,19 @@ export default function DashboardPlantel() {
     { name: nombrePlantelP2 || "Plantel 2", promedio: datosComparativos.p2.promedio, color: "#0071bc" }
   ];
 
-
-
   const dataRegularidad = [
-  {
-    plantel: nombrePlantelP1,
-    Regulares: Number(datosComparativos.p1.regulares_pct),
-    Irregulares: Number(datosComparativos.p1.irregulares_pct)
-  },
-  {
-    plantel: nombrePlantelP2,
-    Regulares: Number(datosComparativos.p2.regulares_pct),
-    Irregulares: Number(datosComparativos.p2.irregulares_pct)
-  }
-];
+    {
+      plantel: nombrePlantelP1,
+      Regulares: Number(datosComparativos.p1.regulares_pct),
+      Irregulares: Number(datosComparativos.p1.irregulares_pct)
+    },
+    {
+      plantel: nombrePlantelP2,
+      Regulares: Number(datosComparativos.p2.regulares_pct),
+      Irregulares: Number(datosComparativos.p2.irregulares_pct)
+    }
+  ];
+
   const diferencia = Math.abs(datosComparativos.p1.promedio - datosComparativos.p2.promedio).toFixed(2);
 
   // Tooltip flotante estilizado como el de la captura de pantalla
@@ -173,22 +172,6 @@ export default function DashboardPlantel() {
     }
     return null;
   };
-
- const BarraApilada = ({ datos }) => (
-  <div style={{ marginTop: "15px", width: "100%" }}>
-    <div style={styles.track}>
-      <div style={{...styles.barra, width: `${datos.regulares_pct}%`, backgroundColor: '#009444'}} />
-      <div style={{...styles.barra, width: `${datos.irregulares_pct}%`, backgroundColor: '#dc2626'}} />
-    </div>
-    <div style={styles.leyenda}>
-      <span style={{color: '#009444', fontSize: '11px', fontWeight: 'bold'}}>{datos.regulares_pct}% Regulares</span>
-      <span style={{color: '#dc2626', fontSize: '11px', fontWeight: 'bold'}}>{datos.irregulares_pct}% Irregulares</span>
-    </div>
-  </div>
-);
-
-
-
 
   return (
     <div style={styles.container}>
@@ -318,7 +301,6 @@ export default function DashboardPlantel() {
                   <span style={styles.metricValueGreen}>{datosComparativos.p2.regulares}</span>
                   <small style={styles.metricPct}>{datosComparativos.p2.regulares_pct}%</small>
                 </div>
-                
                 <div style={styles.subCard}>
                   <label style={styles.metricLabel}>Irregulares</label>
                   <span style={styles.metricValueRed}>{datosComparativos.p2.irregulares}</span>
@@ -346,86 +328,164 @@ export default function DashboardPlantel() {
                 <XAxis dataKey="name" tick={{ fill: "#64748b", fontSize: 13 }} axisLine={{ stroke: "#cbd5e1" }} />
                 <YAxis domain={[0, 10]} ticks={[0, 3, 6, 10]} tick={{ fill: "#64748b", fontSize: 13 }} axisLine={{ stroke: "#cbd5e1" }} />
                 <Tooltip content={<CustomTooltip />} cursor={{ fill: "#e2e8f0", opacity: 0.4 }} />
+                
                 <Bar dataKey="promedio" barSize={340} radius={[4, 4, 0, 0]}>
                   {dataGrafica.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={entry.color} />
                   ))}
+                  
+                  <LabelList
+                    dataKey="promedio"
+                    content={(props) => {
+                      const { x, y, width, height, value } = props;
+                      if (value === undefined || value === null) return null;
+
+                      return (
+                        <text
+                          x={x + width / 2}
+                          y={y + height / 2}
+                          textAnchor="middle"
+                          dominantBaseline="central"
+                          fill="#ffffff"
+                          fontSize="42px"
+                          fontWeight="bold"
+                        >
+                          {Number(value).toFixed(1)}
+                        </text>
+                      );
+                    }}
+                  />
                 </Bar>
               </BarChart>
             </ResponsiveContainer>
           </div>
         </div>
 
+        {/* =====================================================
+            📊 REGULARIDAD VS IRREGULARIDAD
+        ===================================================== */}
+        <div style={styles.graficaCard}>
+          <h3 style={styles.graficaTitle}>Regularidad vs Irregularidad por Plantel</h3>
+          <p style={styles.graficaSubtitle}>Comparación porcentual de alumnos regulares e irregulares.</p>
+
+          <div style={{ width: "100%", height: 220 }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart
+                layout="vertical"
+                data={dataRegularidad}
+                margin={{ top: 5, right: 20, left: 30, bottom: 5 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" horizontal={false} />
+                <XAxis type="number" domain={[0, 100]} tickFormatter={(v) => `${v}%`} />
+                <YAxis type="category" dataKey="plantel" width={180} />
+                <Tooltip formatter={(v) => `${v}%`} />
+                <Legend />
+                <Bar dataKey="Regulares" stackId="a" fill="#009444">
+                  <LabelList dataKey="Regulares" position="center" formatter={(v) => `${v}%`} fill="#ffffff" />
+                </Bar>
+                <Bar dataKey="Irregulares" stackId="a" fill="#dc2626" />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
 
         {/* =====================================================
-    REGULARIDAD VS IRREGULARIDAD
-===================================================== */}
+            📉 NUEVA SECCIÓN: COMPARACIÓN DE CARRERAS POR PLANTEL
+        ===================================================== */}
+        <div style={styles.graficaCard}>
+          <h3 style={styles.graficaTitle}>Comparación de Promedio de Carreras por Plantel</h3>
+          <p style={styles.graficaSubtitle}>
+            Promedio por carrera — izquierda: <span style={{ fontWeight: "600" }}>{nombrePlantelP1 || "Plantel 1"}</span> | derecha: <span style={{ fontWeight: "600" }}>{nombrePlantelP2 || "Plantel 2"}</span>
+          </p>
 
-<div style={styles.graficaCard}>
-  <h3 style={styles.graficaTitle}>
-    Regularidad vs Irregularidad por Plantel
-  </h3>
+          <div style={styles.gridCarreras}>
+            
+            {/* COLUMNA IZQUIERDA: PLANTEL 1 (VERDE) */}
+            <div style={styles.columnaCarrera}>
+              <h4 style={{ ...styles.tituloPlantelCarrera, color: "#00a650" }}>
+                {nombrePlantelP1 || "Plantel 1"}
+              </h4>
+              <div style={{ width: "100%", height: 280, marginTop: "15px" }}>
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart
+                    layout="vertical"
+                    data={datosComparativos?.p1?.carreras || []}
+                    margin={{ top: 5, right: 15, left: 5, bottom: 5 }}
+                  >
+                    <XAxis type="number" domain={[0, 10]} hide />
+                    <YAxis
+                      type="category"
+                      dataKey="carrera"
+                      axisLine={false}
+                      tickLine={false}
+                      tick={{ fill: "#64748b", fontSize: 13 }}
+                      width={110}
+                    />
+                    <Bar
+                      dataKey="promedio"
+                      fill="#00a650"
+                      radius={[10, 10, 10, 10]}
+                      background={{ fill: "#f1f5f9", radius: 10 }}
+                      barSize={20}
+                    >
+                      <LabelList
+                        dataKey="promedio"
+                        position="insideRight"
+                        offset={12}
+                        fill="#ffffff"
+                        fontWeight="bold"
+                        fontSize={12}
+                      />
+                    </Bar>
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+            </div>
 
-  <p style={styles.graficaSubtitle}>
-    Comparación porcentual de alumnos regulares e irregulares.
-  </p>
+            {/* COLUMNA DERECHA: PLANTEL 2 (AZUL) */}
+            <div style={styles.columnaCarrera}>
+              <h4 style={{ ...styles.tituloPlantelCarrera, color: "#0066ff" }}>
+                {nombrePlantelP2 || "Plantel 2"}
+              </h4>
+              <div style={{ width: "100%", height: 280, marginTop: "15px" }}>
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart
+                    layout="vertical"
+                    data={datosComparativos?.p2?.carreras || []}
+                    margin={{ top: 5, right: 15, left: 5, bottom: 5 }}
+                  >
+                    <XAxis type="number" domain={[0, 10]} hide />
+                    <YAxis
+                      type="category"
+                      dataKey="carrera"
+                      axisLine={false}
+                      tickLine={false}
+                      tick={{ fill: "#64748b", fontSize: 13 }}
+                      width={110}
+                    />
+                    <Bar
+                      dataKey="promedio"
+                      fill="#0066ff"
+                      radius={[10, 10, 10, 10]}
+                      background={{ fill: "#f1f5f9", radius: 10 }}
+                      barSize={20}
+                    >
+                      <LabelList
+                        dataKey="promedio"
+                        position="insideRight"
+                        offset={12}
+                        fill="#ffffff"
+                        fontWeight="bold"
+                        fontSize={12}
+                      />
+                    </Bar>
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+            </div>
 
-  <div style={{ width: "100%", height: 220 }}>
-
-    <ResponsiveContainer width="100%" height="100%">
-
-      <BarChart
-        layout="vertical"
-        data={dataRegularidad}
-        margin={{ top: 5, right: 20, left: 30, bottom: 5 }}
-      >
-
-        <CartesianGrid
-          strokeDasharray="3 3"
-          horizontal={false}
-        />
-
-        <XAxis
-          type="number"
-          domain={[0, 100]}
-          tickFormatter={(v) => `${v}%`}
-        />
-
-        <YAxis
-          type="category"
-          dataKey="plantel"
-          width={180}
-        />
-
-        <Tooltip formatter={(v) => `${v}%`} />
-
-        <Legend />
-
-        <Bar
-          dataKey="Regulares"
-          stackId="a"
-          fill="#009444"
-        >
-          <LabelList
-            dataKey="Regulares"
-            position="center"
-            formatter={(v) => `${v}%`}
-            fill="#ffffff"
-          />
-        </Bar>
-
-        <Bar
-          dataKey="Irregulares"
-          stackId="a"
-          fill="#dc2626"
-        />
-
-      </BarChart>
-
-    </ResponsiveContainer>
-
-  </div>
-</div>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -467,7 +527,6 @@ const styles = {
   metricValueRed: { fontSize: "28px", fontWeight: "bold", color: "#dc2626" },
   metricPct: { fontSize: "12px", color: "#64748b", marginTop: "2px" },
 
-  // Estilos dedicados para la tarjeta contenedora de la gráfica
   graficaCard: {
     backgroundColor: "#ffffff",
     borderRadius: "12px",
@@ -479,13 +538,26 @@ const styles = {
   graficaTitle: { fontSize: "18px", fontWeight: "700", color: "#0f172a", margin: 0 },
   graficaSubtitle: { fontSize: "13px", color: "#64748b", marginTop: "4px", marginBottom: "15px" },
  
-  // Agrega esto al final del objeto:
   track: { display: 'flex', height: '28px', borderRadius: '8px', overflow: 'hidden', width: '100%', backgroundColor: '#f1f5f9' },
   barra: { height: '100%', transition: 'width 0.5s ease' },
-  leyenda: { display: 'flex', justifyContent: 'space-between', marginTop: '6px' }
+  leyenda: { display: 'flex', justifyContent: 'space-between', marginTop: '6px' },
+
+  gridCarreras: {
+    display: "flex",
+    flexDirection: "row",
+    gap: "40px",
+    justifyContent: "space-between",
+    marginTop: "25px",
+    flexWrap: "wrap",
+  },
+  columnaCarrera: {
+    flex: 1,
+    minWidth: "300px",
+  },
+  tituloPlantelCarrera: {
+    fontSize: "16px",
+    fontWeight: "700",
+    textAlign: "center",
+    marginBottom: "5px",
+  },
 };
-
-
-  
-
-

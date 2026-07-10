@@ -27,9 +27,12 @@ CSV_ALUMNOS = EXCEL_DIR / "20260602-alumno.csv"
 CSV_PLANTELES = EXCEL_DIR / "20260602-planteles.csv"
 CATALOGO_ENTIDADES = EXCEL_DIR / "Catalogo_entidades.csv"
 CSV_MODULOS = EXCEL_DIR / "20260602-alumnomodulo .csv"
+
 if not CSV_MODULOS.exists():
     CSV_MODULOS = EXCEL_DIR / "20260602-alumnomodulo.csv"
-    CSV_CARRERAS = EXCEL_DIR / "20260602-carreras.csv"
+
+# Se declara de forma global fija para asegurar su acceso en todo el script
+CSV_CARRERAS = EXCEL_DIR / "20260602-carreras.csv"
 
 
 # =====================================================
@@ -102,7 +105,7 @@ def normalizar_codigo_plantel(val):
 
 
 # =====================================================
-# 📊 CÁLCULO DE MÉTRICAS INDIVIDUALES (MÉTODO ULTRA-BLINDADO)
+# 📊 CÁLCULO DE MÉTRICAS INDIVIDUALES (MODIFICADO PARA CARRERAS)
 # =====================================================
 def calcular_metricas_plantel(df, cve_plantel):
     try:
@@ -164,7 +167,7 @@ def calcular_metricas_plantel(df, cve_plantel):
         total_matricula = int(df_filtered["matricula"].nunique()) if "matricula" in df_filtered.columns else len(df_filtered)
         
         if total_matricula == 0:
-            return {"matricula": 0, "promedio": 0.0, "regulares": 0, "regulares_pct": 0.0, "irregulares": 0, "irregulares_pct": 0.0}
+            return {"matricula": 0, "promedio": 0.0, "regulares": 0, "regulares_pct": 0.0, "irregulares": 0, "irregulares_pct": 0.0, "carreras": []}
 
         col_calif = "promg" if "promg" in df_filtered.columns else ("cspromgral" if "cspromgral" in df_filtered.columns else "califfinal")
         
@@ -177,6 +180,58 @@ def calcular_metricas_plantel(df, cve_plantel):
             regulares = 0
 
         irregulares = total_matricula - regulares
+
+        # =====================================================
+        # 📊 NUEVA EXTRACCIÓN: PROMEDIO POR CARRERA PARA LA GRÁFICA
+        # =====================================================
+        carreras_list = []
+        if "cveplanestudio" in df_filtered.columns and col_calif in df_filtered.columns:
+            try:
+                mapa_exacto = {}
+                mapa_raiz = {}
+                if CSV_CARRERAS.exists():
+                    df_cat = pd.read_csv(CSV_CARRERAS, skiprows=1, names=["modelo", "cve", "descripcion", "descorta"], encoding="latin1")
+                    for _, row in df_cat.iterrows():
+                        cve_orig = str(row["cve"]).upper().strip()
+                        if cve_orig and cve_orig != "NAN":
+                            mapa_exacto[cve_orig] = str(row["descripcion"]).strip()
+                            if len(cve_orig) >= 4:
+                                mapa_raiz[cve_orig[:4]] = str(row["descripcion"]).strip()
+
+                df_car = df_filtered.copy()
+                df_car["cveplanestudio"] = df_car["cveplanestudio"].astype(str).str.upper().str.strip()
+                
+                df_res = (
+                    df_car.dropna(subset=["calif_num", "cveplanestudio"])
+                    .groupby("cveplanestudio")
+                    .agg(promedio=("calif_num", "mean"))
+                    .reset_index()
+                )
+                df_res["promedio"] = df_res["promedio"].round(1) # Un decimal como en tu imagen (Ej: 8.9)
+
+                def obtener_nombre_carrera(cve):
+                    cve_clean = str(cve).upper().strip()
+                    if cve_clean in mapa_exacto: return mapa_exacto[cve_clean]
+                    if len(cve_clean) >= 4 and cve_clean[:4] in mapa_raiz: return mapa_raiz[cve_clean[:4]]
+                    return cve
+
+                def limpiar_texto_carrera(texto):
+                    t = str(texto)
+                    replacements = {
+                        "TÃ©cnico": "Técnico", "InformÃ¡tica": "Informática",
+                        "EnfermerÃ­a": "Enfermería", "MecatrÃ³nica": "Mecatrónica",
+                        "AdministraciÃ³n": "Administración", "Contabilidad": "Contabilidad"
+                    }
+                    for k, v in replacements.items(): t = t.replace(k, v)
+                    # Quita el prefijo institucional largo para que se lea limpio como en tu diseño
+                    t = t.replace("Profesional Técnico-Bachiller en ", "").replace("Profesional Técnico en ", "")
+                    t = t.replace("Profesional TÃ©cnico-Bachiller en ", "")
+                    return t.strip()
+
+                df_res["carrera"] = df_res["cveplanestudio"].apply(obtener_nombre_carrera).apply(limpiar_texto_carrera)
+                carreras_list = df_res.sort_values("promedio", ascending=False)[["carrera", "promedio"]].to_dict("records")
+            except Exception:
+                carreras_list = []
         
         return {
             "matricula": total_matricula,
@@ -184,10 +239,11 @@ def calcular_metricas_plantel(df, cve_plantel):
             "regulares": regulares,
             "regulares_pct": round((regulares / total_matricula) * 100, 2) if total_matricula > 0 else 0.0,
             "irregulares": irregulares,
-            "irregulares_pct": round((irregulares / total_matricula) * 100, 2) if total_matricula > 0 else 0.0
+            "irregulares_pct": round((irregulares / total_matricula) * 100, 2) if total_matricula > 0 else 0.0,
+            "carreras": carreras_list # <--- Inyectado con éxito
         }
     except Exception:
-        return {"matricula": 0, "promedio": 0.0, "regulares": 0, "regulares_pct": 0.0, "irregulares": 0, "irregulares_pct": 0.0}
+        return {"matricula": 0, "promedio": 0.0, "regulares": 0, "regulares_pct": 0.0, "irregulares": 0, "irregulares_pct": 0.0, "carreras": []}
 
 
 # =====================================================
@@ -200,8 +256,11 @@ def obtener_comparacion_planteles(cve_p1, cve_p2, periodo):
         df.columns = df.columns.str.strip().str.lower()
         if periodo and "periodoescolar" in df.columns:
             df = df[df["periodoescolar"].astype(str).str.strip() == str(periodo).strip()]
+        
+        # Al ejecutar esto, "p1" y "p2" ya llevarán su llave "carreras" con el arreglo listo
         return limpiar_nan({"p1": calcular_metricas_plantel(df, cve_p1), "p2": calcular_metricas_plantel(df, cve_p2)})
     except Exception: return {}
+
 
 # =====================================================
 # 📦 INTERFAZ GENERAL REQUERIDA POR EL DASHBOARD
